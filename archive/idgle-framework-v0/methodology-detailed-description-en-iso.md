@@ -575,7 +575,7 @@ The following referenced documents are indispensable for the application of this
 
 ---
 
-## Diagrams and Schemas
+## Process Visualizations
 
 ### IDGL Lifecycle
 
