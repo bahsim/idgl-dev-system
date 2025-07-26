@@ -23,8 +23,8 @@ This loop applies to everything from a single function to an entire application.
 
 This directory contains the detailed breakdown of the IDGL framework. Here's a recommended reading path to get started:
 
-1.  **[The IDGL Spec](./00-the-idgl-spec.md):** Get a high-level overview of how IDGL treats everything as a "spec" and how different specs map to the project lifecycle.
-2.  **[IDGL Core Concept](./01-idgl-core-concept.md):** Understand the fundamental 4-step "ai-gen" cycle that powers the entire methodology.
-3.  **[The Two Lifecycles of an IDGL Project](./09-idgl-lifecycle-phases.md):** Learn how IDGL handles both the initial creation of a project and its continuous, long-term evolution through major epics and minor incremental changes.
+1.  **[The IDGL Spec](./00-concept/00-the-idgl-spec.md):** Get a high-level overview of how IDGL treats everything as a "spec" and how different specs map to the project lifecycle.
+2.  **[IDGL Core Concept](./00-concept/01-idgl-core-concept.md):** Understand the fundamental 4-step "ai-gen" cycle that powers the entire methodology.
+3.  **[The Two Lifecycles of an IDGL Project](./00-concept/09-idgl-lifecycle-phases.md):** Learn how IDGL handles both the initial creation of a project and its continuous, long-term evolution through major epics and minor incremental changes.
 
 From there, you can explore the other documents to dive deeper into specific definitions, such as the directory structure, practitioner profiles, and the various types of tasks and artifacts that make up an IDGL project. 
