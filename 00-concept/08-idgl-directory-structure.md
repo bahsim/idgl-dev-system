@@ -71,7 +71,7 @@ This is the most common case. The task is simple enough that it doesn't need to 
 
 *   **`intent.md`**: The goal for this specific task.
 *   **`validation_summary.md`**: The final outcome of the task.
-*   **`artifact/`**: An optional directory to hold the generated output for this task.
+*   **`artifact/`**: An optional directory to hold the generated output for this.
 *   **`history/`**: A log of the strategic decisions made during this task.
 *   **`decomposition/`, `research/`, `compilation/`, and `refinement/`**: Folders containing sub-tasks, which are themselves complete generative tasks.
 
@@ -156,15 +156,50 @@ This structure makes the workflow explicit and consistent for every phase:
 4.  **Iterative Execution:** Represented by the `03_execution/` folder. This folder contains the sequence of all generative tasks that need to be completed to achieve the phase's main goal.
 5.  **Final Result:** This is not a folder. It is the final artifact produced by the last task in the `03_execution/` folder, which is then placed in its correct location in the main project source code. 
 
+### Phase Naming and Organization
+
+#### Rationale: A Self-Documenting Project History
+
+In the Intent-Driven Generative Lifecycle (IDGL), the directory structure is not just a place to store files; it is a living, auditable record of the project's entire history. To achieve this, the naming of `Development Phase` folders follows a strict and consistent convention.
+
+This convention ensures that a simple directory listing provides a clear, high-level overview of the project's evolution, making it instantly understandable to any practitioner, new or old.
+
+#### The Naming Convention: `NN-descriptive-name-phase`
+
+Every `Development Phase` folder must adhere to the following three-part format:
+
+**`[Chronological Prefix]-[Descriptive Name]-[Type Suffix]`**
+
+Example: `01-scaffolding-phase`, `02-authentication-phase`
+
+##### 1. Chronological Prefix (`NN-`)
+
+*   **Format:** A two-digit number followed by a hyphen (e.g., `01-`, `02-`, `11-`).
+*   **Purpose:** This prefix is mandatory and enforces a strict chronological order on the project's major development epics. It turns the folder list into a timeline, showing what was built and in what order. This is critical for understanding dependencies and the historical context of the codebase.
+
+##### 2. Descriptive Name (`kebab-case`)
+
+*   **Format:** A short, descriptive name in `kebab-case`.
+*   **Purpose:** The name should be a concise summary of the phase's `main_goal.md`. It provides immediate, human-readable context about the work accomplished during that epic. For example, `authentication-phase` is clear and descriptive, whereas a generic name like `feature-work` would be too vague.
+
+##### 3. Type Suffix (`-phase`)
+
+*   **Format:** The literal string `-phase`.
+*   **Purpose:** This suffix is mandatory and serves as a clear identifier for the type of directory. It explicitly marks the folder as a container for a formal, multi-step **Development Phase**, distinguishing it from other potential top-level directories within the `.idgl` structure (such as the `sustaining/` directory or future concepts like shared libraries).
+
+By enforcing this structure, the IDGL ensures that the project's organization remains clean, scalable, and self-documenting over its entire lifecycle.
+
+---
+
 ## III. The IDGL Repository Layout
 
-## Rationale
+### Rationale
 
 To maintain a clean and scalable project, the process artifacts (the history, intents, and plans of the IDGL) should be physically separated from the final, deployable code artifacts. This is the highest level of organization in an IDGL-driven project.
 
 This layout defines a root structure with two primary directories: `<project>` and `<artifact>`.
 
-## Top-Level Repository Structure
+### Top-Level Repository Structure
 
 ```
 <project-root>/
@@ -184,4 +219,4 @@ This layout defines a root structure with two primary directories: `<project>` a
 
 *   **`.idgl/`**: This directory lives at the project root and contains all the metadata related to the IDGL process.
 
-*   **Source Code (`src/`, `package.json`, etc.)**: The actual, clean source code of the application lives at the project root alongside the `.idgl/` directory. This is the final `Result` of the development phases and represents the canonical artifact. This standard layout ensures that the history and methodology do not encumber the final product. 
+*   **Source Code (`src/`, `package.json`, etc.)**: The actual, clean source code of the application lives at the project root alongside the `.idgl/` directory. This is the final `Result` of the development phases and represents the canonical artifact. This standard layout ensures that the history and methodology do not encumber the final product.
