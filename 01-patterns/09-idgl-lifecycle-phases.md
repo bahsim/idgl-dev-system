@@ -38,7 +38,7 @@ graph TD
 ## Lifecycle 1: Initial Generation
 This is the special, one-time process of creating the first canonical artifact (e.g., the MVP or PoC) from a blank slate.
 
-*   **Unit of Work:** The formal, multi-step **Development Phase**, as defined in `07-idgl-development-phase.md`.
+*   **Unit of Work:** The formal, multi-step **Development Phase**, as defined in `./07-idgl-development-phase.md`.
 *   **Process:** This consists of a sequence of one or more `Development Phases` required to get to the first stable, releasable version of the product.
 
 ## Lifecycle 2: Continuous Development

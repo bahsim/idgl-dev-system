@@ -1,30 +1,23 @@
-# Introduction to the IDGL Framework
+# The IDGL Development System: An Introduction
 
-Welcome to the Intent-Driven Generative Lifecycle (IDGL) specification. This collection of documents defines a systematic and powerful methodology for developing software in partnership with artificial intelligence.
+Welcome to the Intent-Driven Generative Lifecycle (IDGL) Development System. This collection of documents defines a complete, expert-level system for developing software in partnership with artificial intelligence.
 
-## What is IDGL?
+## The Core Philosophy
 
-IDGL is a **spec-driven development** framework. At its heart, it's about making human intent the primary, authoritative artifact of the entire development process. Instead of treating code as the ultimate source of truth, IDGL elevates the **specification** — the clear, written description of what we want to build and why—to that central role.
+The IDGL system is an engineering discipline built on a single, powerful premise: **human intent**, not the generated code, must be the primary, authoritative source of truth.
 
-The code, documentation, and other outputs are all considered downstream translations of the rich intent captured in the spec. This ensures that both humans and AI are aligned around a single, unambiguous vision.
+This is achieved by establishing a formal, auditable relationship between a human-authored `Spec` and an AI-generated `Digital Product`. The system provides the principles, processes, and patterns for managing this relationship at scale.
 
-## The Core Lifecycle
+## Navigating the Core Documentation
 
-The fundamental process of IDGL is a simple, iterative cycle:
+This directory contains the detailed breakdown of the IDGL system. To understand the core methodology, the documents should be read in the following order:
 
-1.  **Intent Formation:** Clearly define the desired outcome.
-2.  **AI Generation:** Use an AI to generate a complete artifact based on that intent.
-3.  **Validation:** Critically evaluate the generated output against the original intent.
-4.  **Refinement:** If needed, create new, scoped sub-tasks to fix or improve the artifact, and repeat the cycle.
+1.  **[The Conceptual Model](./00-the-conceptual-model.md):** Start here. This document defines the high-level philosophy and the three core pillars of the system: The Spec, The AI, and The Digital Product.
 
-This loop applies to everything from a single function to an entire application.
+2.  **[The Generative Task](./01-the-generative-task.md):** This document specifies the formal, executable process—the Generative Task and its IDGL Cycle—for turning a Spec into a validated Digital Product.
 
-## Navigating This Specification
+3.  **[A Specification for Authoring Specs](./02-anatomy-of-a-spec.md):** This document provides the formal specification for authoring a high-quality, professional Spec.
 
-This directory contains the detailed breakdown of the IDGL framework. Here's a recommended reading path to get started:
+## Framework & Patterns
 
-1.  **[The IDGL Spec](./00-concept/00-the-idgl-spec.md):** Get a high-level overview of how IDGL treats everything as a "spec" and how different specs map to the project lifecycle.
-2.  **[IDGL Core Concept](./00-concept/01-idgl-core-concept.md):** Understand the fundamental 4-step "ai-gen" cycle that powers the entire methodology.
-3.  **[The Two Lifecycles of an IDGL Project](./00-concept/09-idgl-lifecycle-phases.md):** Learn how IDGL handles both the initial creation of a project and its continuous, long-term evolution through major epics and minor incremental changes.
-
-From there, you can explore the other documents to dive deeper into specific definitions, such as the directory structure, practitioner profiles, and the various types of tasks and artifacts that make up an IDGL project. 
+Once you have a firm grasp of the core methodology, you can explore the optional but powerful **[IDGL Patterns](./01-patterns/)**, which provide organizational structures for managing Generative Tasks at scale.

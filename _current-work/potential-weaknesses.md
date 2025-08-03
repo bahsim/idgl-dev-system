@@ -11,14 +11,14 @@ The framework provides a powerful and rigorous structure for managing complex de
 
 **2. The "Perfect Spec" Assumption**
 
-The entire model is predicated on the idea of a high-quality, unambiguous "Spec" (`00-the-idgl-spec.md`). The IDGL Practitioner is expected to be a "Master of Intent Formulation" (`06-idgl-practitioner-profile.md`).
+The entire model is predicated on the idea of a high-quality, unambiguous "Spec" (`./02-the-idgl-spec.md`). The IDGL Practitioner is expected to be a "Master of Intent Formulation" (`01-patterns/06-idgl-practitioner-profile.md`).
 
 *   **Weakness:** This assumption is a significant single point of failure. In reality, requirements are often discovered and evolve *during* development, not before. The framework doesn't appear to have a formal feedback loop for refining the `System Design` or `Comprehensive Plan` once the `Iterative Execution` phase has begun. If the initial spec is flawed, the "Garbage In, Garbage Out" principle means the AI will faithfully generate a flawed artifact, leading to wasted time and effort.
-*   **Impact:** The process could feel rigid and waterfall-like. A discovery during task `03_integrate_components` might invalidate the assumptions made in `01_system_design`, but the framework doesn't provide a clear, low-friction path to update the design mid-phase. It only seems to offer a full "Re-Generation Phase" (`11-refactoring-with-idgl.md`), which is too coarse for mid-phase adjustments.
+*   **Impact:** The process could feel rigid and waterfall-like. A discovery during task `03_integrate_components` might invalidate the assumptions made in `01_system_design`, but the framework doesn't provide a clear, low-friction path to update the design mid-phase. It only seems to offer a full "Re-Generation Phase" (`01-patterns/11-refactoring-with-idgl.md`), which is too coarse for mid-phase adjustments.
 
 **3. Impracticality of Manual History Audits**
 
-The concept of a complete, auditable history is powerful. However, the practical application of using it seems challenging. The `sustaining/` directory is designed to be an input for a future "Re-Generation Phase" (`09-idgl-lifecycle-phases.md`).
+The concept of a complete, auditable history is powerful. However, the practical application of using it seems challenging. The `sustaining/` directory is designed to be an input for a future "Re-Generation Phase" (`01-patterns/09-idgl-lifecycle-phases.md`).
 
 *   **Weakness:** Over several years, a feature area like `sustaining/authentication/` could accumulate hundreds or thousands of task folders. The cognitive effort for a human to manually review this vast, unstructured history and synthesize it into a coherent set of lessons for a new system design is immense and likely impractical.
 *   **Impact:** The history risks becoming a "write-only" log—a data graveyard that is collected for compliance but is too noisy to be genuinely useful for strategic decisions, defeating one of its primary purposes. The framework relies on this history being useful but doesn't specify the tooling or process needed to make it so.
