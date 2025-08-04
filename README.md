@@ -8,15 +8,15 @@ The IDGL system is an engineering discipline built on a single, powerful premise
 
 This is achieved by establishing a formal, auditable relationship between a human-authored `Spec` and an AI-generated `Digital Product`. The system provides the principles, processes, and patterns for managing this relationship at scale.
 
-## Navigating the Core Documentation
+## The Core Methodology
 
-This directory contains the detailed breakdown of the IDGL system. To understand the core methodology, the documents should be read in the following order:
+The core methodology is defined by the following three documents, which establish the expert-level standard for the system. They should be read in order:
 
-1.  **[The Conceptual Model](./00-the-conceptual-model.md):** Start here. This document defines the high-level philosophy and the three core pillars of the system: The Spec, The AI, and The Digital Product.
+1.  **[The Conceptual Model](./00-the-conceptual-model.md):** Defines the high-level philosophy and the core pillars of the IDGL system. (Start here)
 
-2.  **[The Generative Task](./01-the-generative-task.md):** This document specifies the formal, executable process—the Generative Task and its IDGL Cycle—for turning a Spec into a validated Digital Product.
+2.  **[The Generative Task](./01-the-generative-task.md):** Specifies the formal, executable process for turning a Spec into a validated Digital Product.
 
-3.  **[A Specification for Authoring Specs](./02-anatomy-of-a-spec.md):** This document provides the formal specification for authoring a high-quality, professional Spec.
+3.  **[The Anatomy of a Spec](./02-anatomy-of-a-spec.md):** Defines the engineering standard for authoring a high-quality Spec.
 
 ## Framework & Patterns
 

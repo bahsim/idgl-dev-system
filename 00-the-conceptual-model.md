@@ -9,7 +9,7 @@ graph TD
     A -.-> C
 ```
 
-## The Three Pillars of IDGL
+## The Core Components
 
 1.  **The Spec:** This is the authoritative, version-controlled definition of a desired outcome. It is a formal specification, authored by a human, that describes what to build, why it's needed, and how to verify its correctness.
 
@@ -22,7 +22,7 @@ graph TD
     *   A configuration file.
     *   A set of test data.
 
-## The Spec: The Authoritative Artifact
+## The Spec: The Authoritative Driver
 
 In the IDGL system, the "Spec" is not merely a document; it is the primary, version-controlled artifact that captures all structured communication and intent.
 
