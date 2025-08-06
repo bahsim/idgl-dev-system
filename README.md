@@ -26,12 +26,12 @@ This cycle transforms a "lucky" outcome, which is unreliable, into a **repeatabl
 
 ## The Core Methodology
 
-The core methodology is defined by the following three documents, which establish the expert-level standard for the system. They should be read in order:
+The core methodology is defined by the following four documents, which establish the expert-level standard for the system. They should be read in order:
 
 1.  **[The Conceptual Model](./01-the-conceptual-model.md):** Defines the core components of the IDGL system (Spec, AI, Validation, Product) and contrasts the model with traditional development approaches. (Start here)
 2.  **[The Anatomy of a Spec](./02-anatomy-of-a-spec.md):** Defines the engineering standard for authoring a high-quality Spec.
 3.  **[The Artifact Lifecycle](./03-the-artifact-lifecycle.md):** Defines the core IDGL processes for the generation, modification, and sustaining of an Artifact.
-
+4.  **[The Communication Principles](./04-communication-principles.md):** Defines the core principles for effective human-AI communication, which is the foundational skill for applying the entire methodology.
 
 ## IDGL Patterns: The Blueprints for Automation
 
