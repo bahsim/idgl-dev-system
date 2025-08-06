@@ -59,3 +59,21 @@ A high-quality Spec is as much about avoiding ambiguity as it is about providing
 *   **Vagueness:** "Make a button." (Violates Discipline of Thought; lacks context, constraints, and criteria.)
 *   **Compound Objectives:** "Create the `useDebounce` hook and refactor the user profile page." (Violates Respect for the Energy of Attention; this should be two separate Generative Tasks.)
 *   **Implied Knowledge:** "Implement standard debounce logic." (Fails to specify the output format; the expected logic must be explicitly defined in the criteria.)
+
+## 5. The Principle of Enrichment
+
+The core principle that elevates a good Spec to a great one is **enrichment**: the practice of providing a level of detail in the `Verification Criteria` that leaves no room for ambiguity. This is the most direct way to ensure the AI's output is consistent, reliable, and correct. More detail equals more consistency.
+
+An enriched Spec does not need to be long, but it must be precise. It forces the author to think through the complete behavior of the desired artifact, including edge cases and error conditions.
+
+### Enriched Verification Criteria Example
+This example shows an enriched version of the `useDebounce` criteria from section 3.3.
+
+> #### Verification Criteria
+> - [ ] The hook must accept a generic `value` of type `T` and a `delay` in milliseconds.
+> - [ ] It must return a value of type `T`.
+> - [ ] The returned value must only update after the `delay` has passed without the input `value` changing.
+> - [ ] On the initial render, the returned value must be equal to the initial input value.
+> - [ ] If the component unmounts, any pending debounced updates must be cancelled to prevent memory leaks.
+> - [ ] The hook's internal timer must be correctly cleaned up and reset whenever the input `value` changes.
+> - [ ] The hook should be accompanied by a suite of unit tests that cover the core logic, the cancellation behavior, and the edge case of a `delay` of `0`.
