@@ -34,3 +34,23 @@ $source = Get-Content -Path <path-to-source-code.tsx> -Raw
 # 2. Call the consumer script, which will use the engine internally
 ./assemble-spec-prompt.ps1 -TemplatePath ./prompt-templates/spec-compiler.md -BriefContent $brief -ContextContent $source
 ```
+
+### `compile-spec-from-files.ps1`
+
+Convenience wrapper that takes file paths, reads them, and invokes `assemble-spec-prompt.ps1`.
+
+Parameters
+
+- `-TemplatePath [string]` (Optional): Defaults to `./prompt-templates/spec-compiler.md` in this directory.
+- `-BriefPath [string]` (Required): Path to the human brief (Markdown or text).
+- `-ContextPaths [string[]]` (Required): One or more paths to source files that form the context block.
+- `-OutFile [string]` (Optional): If provided, writes the final compiled prompt to this file.
+
+Usage Example
+
+```powershell
+./compile-spec-from-files.ps1 `
+  -BriefPath ../01-react-refactor-with-tests/brief.md `
+  -ContextPaths ../01-react-refactor-with-tests/ProductList.before.tsx `
+  -OutFile ../01-react-refactor-with-tests/generated-spec.md
+```

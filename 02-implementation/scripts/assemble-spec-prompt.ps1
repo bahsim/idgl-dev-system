@@ -6,7 +6,10 @@ param (
     [string]$BriefContent,
 
     [Parameter(Mandatory=$true)]
-    [string[]]$ContextContent
+    [string[]]$ContextContent,
+
+    [Parameter(Mandatory=$false)]
+    [string]$OutFile
 )
 
 # --- ENGINE IMPORT ---
@@ -31,5 +34,10 @@ $finalPrompt = $compiledTemplate -replace '\{\{CONTEXT_BLOCK\}\}', $contextBlock
 $finalPrompt = $finalPrompt -replace '\{\{BRIEF_CONTENT\}\}', $BriefContent
 
 # --- SCRIPT OUTPUT ---
-# Output the final, assembled prompt to the console.
-Write-Output $finalPrompt
+# If -OutFile is specified, write to the file. Otherwise, output to the console.
+if ($OutFile) {
+    $finalPrompt | Out-File -FilePath $OutFile -Encoding utf8
+}
+else {
+    Write-Output $finalPrompt
+}
