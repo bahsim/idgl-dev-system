@@ -34,7 +34,12 @@ The agentic model, as defined by the Intent-Driven Generative Lifecycle (IDGL), 
 
 In this paradigm, iteration does not happen on the code; it happens on the **intent**. The feedback loop is not `code -> test -> debug`, but `spec -> generate -> evaluate -> refine-spec`.
 
-The practitioner's focus shifts to **a more effective loop** of refining the specification itself.
+The practitioner's focus shifts to **a more effective loop** of refining the specification itself. This loop is composed of four distinct components:
+
+1.  **The Intent (The `Spec`):** This is the authoritative, version-controlled definition of a desired outcome. It is a formal specification, authored by a human, that describes what to build, why it's needed, and how to validate its correctness.
+2.  **The Generation (The `AI`):** The AI acts as a powerful synthesis engine. Its role is to take the formal `Spec` and generate a candidate **Artifact** for evaluation.
+3.  **The Evaluation (The `Validation`):** This is the essential act of human judgment that serves as the system's quality gate. The criteria defined in the `Spec` are used to verify the AI-generated Artifact.
+4.  **The Result (The `Digital Product`):** This is the tangible, **validated output** of the cycle. It is an Artifact that has successfully passed the Validation stage.
 
 ```mermaid
 graph TD
@@ -58,6 +63,18 @@ Because generation is fast and cheap, the **Refinement Process** is not a simple
 *   **Pre-computation of Intermediates:** Instead of generating the entire artifact at once, the practitioner can generate "semi-finished products" or reusable details in advance. This allows for faster experimentation and composition of the final `Solution` from a palette of pre-generated, validated components.
 
 The challenge is no longer about managing the labor of construction, but about mastering the discipline of thought required to create an executable specification. We are moving from being assemblers to being architects.
+
+### The Paradigms at a Glance
+To clarify the unique identity of the IDGL system, it is helpful to contrast it with the traditional approach.
+
+| Aspect | Traditional Approach | IDGL Approach |
+|--------|---------------------|---------------|
+| **Organization** | Tasks and sprints | Outcome-focused intents |
+| **Planning** | Upfront detailed planning | Adaptive planning from intents |
+| **AI Role** | Tool for specific tasks | Strategic partner in generation |
+| **Human Role** | Task executor | Strategic director and validator |
+| **Output** | Completed tasks | Working, demonstrable results |
+| **Adaptation** | Change management process | Continuous intent refinement |
 
 ## The Practical Realities of This Shift
 

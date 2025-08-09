@@ -38,8 +38,57 @@ graph TD
 ## Lifecycle 1: Initial Generation
 This is the special, one-time process of creating the first canonical artifact (e.g., the MVP or PoC) from a blank slate.
 
-*   **Unit of Work:** The formal, multi-step **Development Phase**, as defined in `./07-idgl-development-phase.md`.
+*   **Unit of Work:** The formal, multi-step **Development Phase**.
 *   **Process:** This consists of a sequence of one or more `Development Phases` required to get to the first stable, releasable version of the product.
+
+### The Five Steps of a Development Phase
+Each Development Phase follows a consistent five-step process, moving from a high-level goal to a concrete, validated result.
+
+```mermaid
+graph TD
+    A["1 Main Goal"] --> B["2 System Design"];
+    B --> C["3 Comprehensive Plan<br/>(Decomposition & Compilation Tasks)"];
+    C --> D["4 Iterative Execution<br/>(Working through the plan)"];
+    D --> E["5 Final Result"];
+
+    subgraph "Planning Steps"
+        B & C
+    end
+    subgraph "Execution Step"
+        D
+    end
+
+    classDef blue fill:#e0e7ff,stroke:#5a79e0,color:#000
+    classDef green fill:#e0ffe0,stroke:#5ae05a,color:#000
+
+    class A,E blue
+    class B,C,D green
+```
+
+1.  **Main Goal Definition:** The focused objective for the phase. It defines the "why" and is the source for the top-level `intent.md`.
+2.  **System Design:** A generative task to create the architectural blueprint. It defines the "what" and "how."
+3.  **Comprehensive Planning:** The central orchestration step. It uses the `System Design` to create a complete dependency graph of all work.
+4.  **Iterative Execution:** The "work" step where the practitioner executes the tasks laid out in the plan.
+5.  **Final Result:** The tangible, validated output of the phase, which serves as the baseline for the next phase.
+
+### Spec Hierarchy in a Development Phase
+The specifications within a phase follow a clear hierarchy.
+
+```mermaid
+graph TD
+    subgraph "IDGL Project"
+        A["Product Spec<br/>(main_goal.md)"] --> B{"System Design Task"}
+        B --> C["Technical Spec<br/>(Artifact of System Design)"]
+        C --> D{"Comprehensive Plan Task"}
+        D --> E["Execution Plan<br/>(The .idgl directory structure)"]
+        E --> F["Micro-Specs<br/>(intent.md for each generative task)"]
+        F --> G["Code Artifacts"]
+    end
+
+    subgraph "Reusable Assets"
+        S["Reusable Spec Library<br/>(e.g., /specs/security.md)"] -.-> F
+    end
+```
 
 ## Lifecycle 2: Continuous Development
 This lifecycle begins after the initial artifact is established and covers all subsequent evolution of the product. It has two modes of operation depending on the scale of the work.
@@ -58,54 +107,11 @@ This two-mode model for continuous development provides the right level of struc
 
 ---
 
-## Registering Work in the Directory Structure
+## Directory Structure Implementation
 
-The two modes of the Continuous Development lifecycle are reflected in how work is organized within the `.idgl` directory. The numbered phase folders represent the chronological history of the project's initial creation and major epics, while a separate `sustaining/` folder, organized by the project's architecture, provides a living archive for all maintenance and incremental work.
+The way work is organized on the file system is a direct reflection of these lifecycle modes. For the complete, detailed specification of how to structure the `.idgl` directory for both major phases and sustaining tasks, see the authoritative pattern document:
 
-### Registering Major Epics
-
-When adding a major new feature set, a new, numbered **Development Phase** folder is added to the sequence. This logs the project's major historical milestones.
-
-```
-.idgl/
-│
-├── 📁 01-scaffolding-phase/
-├── 📁 02-authentication-phase/
-└── 📁 03-product-catalog-phase/  // <-- A new phase for a major new epic
-```
-
-### Registering Incremental Changes (The Golden Mean)
-
-For smaller, ad-hoc tasks, work is registered inside a top-level `sustaining/` directory that is organized by feature. To balance ease-of-use with long-term scalability, each feature folder uses a hybrid "active workspace vs. cold archive" model.
-
-```
-.idgl/
-│
-└── 📁 sustaining/
-    │
-    └── 📁 authentication/                 // The feature-specific context
-        │
-        ├── 📁 fix-recent-login-bug/      // <-- New tasks are created here as a flat list
-        ├── 📁 add-new-tooltip/          // <-- for a clean, active workspace
-        │
-        └── 📁 archive/                  // <-- A dedicated home for old, completed tasks
-            │
-            ├── 📁 2024/
-            │   ├── 📁 fix-old-bug-from-q3/
-            │   └── 📁 another-old-task/
-            │
-            └── 📁 2023/
-                └── ...
-
-```
-
-#### The Workflow
-
-*   **For the Active Developer:** The workflow is simple and low-friction. A practitioner working on a new bug fix creates a new task folder directly inside the relevant feature directory (e.g., `sustaining/authentication/`). The list of folders they see is a clean, relevant list of current and recent work.
-
-*   **For Long-Term Curation:** To prevent the active workspace from becoming a dump, a periodic archiving process is used. At the end of a quarter or year, completed task folders are simply moved from the root of the feature directory into the appropriate `archive/[year]/` sub-directory.
-
-This "golden mean" approach provides the best of both worlds: a simple, flat structure for day-to-day work and a scalable, organized archive for the long-term project history.
+*   **[./07-Pattern-Directory-Structure.md](./07-Pattern-Directory-Structure.md)**
 
 ---
 

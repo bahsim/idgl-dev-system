@@ -37,7 +37,8 @@ graph TD
 This process is used for localized, low-risk changes that improve the health of a specific component without altering the system's architecture.
 
 *   **Examples:** Renaming a variable for clarity, extracting a complex function, converting a single module to a new pattern (e.g., `async/await`).
-*   **Process:** A shallow refactoring is treated as an ad-hoc **Generative Task** and is registered within the **Sustaining Lifecycle**.
+*   **Process:** A shallow refactoring is treated as an ad-hoc **Generative Task** within the **Sustaining Lifecycle**. The practitioner authors a clear `intent.md` that specifies the desired change, which the AI then executes.
+    *   **Example Intent:** *"In the attached `auth.service.ts` file, the `checkUser` function is too long. Extract the password validation logic into a separate private method named `_validatePassword` and update the original function to call it. The new method must have the same level of error handling as the original logic."*
 *   **Directory Structure:** A new task folder is created within the `sustaining/` directory of the relevant feature.
     ```
     .idgl/sustaining/authentication/refactor-login-function-for-clarity/
@@ -48,8 +49,9 @@ This process is used for localized, low-risk changes that improve the health of 
 This process is reserved for large-scale, high-risk, architectural changes that fundamentally reshape a part of the system.
 
 *   **Examples:** Migrating a backend framework, breaking a monolith into microservices, changing a core database paradigm.
-*   **Process:** A deep refactoring **must be escalated to a formal Re-Generation Phase**. This is a full **Development Phase** with a specific `Main Goal` of rebuilding a decayed or outdated part of the system.
-*   **Key Step:** The `01_system_design` task for this phase is critical. It must use the entire maintenance history from the `sustaining/` folder as a primary input, ensuring that the new architecture is explicitly informed by the documented problems of the old one.
+*   **Process:** A deep refactoring **must be escalated to a formal Re-Generation Phase**. This is a full **Development Phase** where the key architectural tasks are AI-assisted.
+    *   **Key AI-Assisted Step:** The `01_system_design` task for this phase is critical. The practitioner prompts the AI to act as a senior architect, providing the entire maintenance history from the `sustaining/` folder as context. The AI's task is to propose a new, clean architecture that explicitly solves the documented problems of the old one.
+    *   **Human Validation:** The practitioner then validates and refines this AI-generated architectural plan before proceeding with the rest of the phase.
 *   **Directory Structure:** A new, numbered `Development Phase` folder is created at the root of the `.idgl` directory.
     ```
     .idgl/04-refactor-backend-to-microservices-phase/

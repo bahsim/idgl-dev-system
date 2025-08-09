@@ -32,14 +32,26 @@ The best way to understand the IDGL is to see it in action. Before diving into t
 
 This tutorial walks through a complete, realistic Generative Task, from a high-level idea to a fully tested and validated software component. It is the most direct way to get a feel for the new development loop and the role of the IDGL practitioner.
 
-## The Core Methodology
+## The Core Documentation
 
-The core methodology is defined by the following four documents, which establish the expert-level standard for the system. They should be read in order:
+The IDGL is defined by a set of documents that build upon one another. They are designed to be read in the following order.
 
-1.  **[The Conceptual Model](./01-the-conceptual-model.md):** Defines the core components of the IDGL system (Spec, AI, Validation, Product) and contrasts the model with traditional development approaches. (Start here)
-2.  **[The Anatomy of a Spec](./02-anatomy-of-a-spec.md):** Defines the engineering standard for authoring a high-quality Spec.
-3.  **[The Artifact Lifecycle](./03-the-artifact-lifecycle.md):** Defines the core IDGL processes for the generation, modification, and sustaining of an Artifact.
-4.  **[The Communication Principles](./04-communication-principles.md):** Defines the core principles for effective human-AI communication, which is the foundational skill for applying the entire methodology.
+### 1. The Vision: The "What & Why"
+This is the manifesto that defines the new generative paradigm. It is the definitive starting point.
+
+*   **[The Core Paradigm](./00-core.md):** Defines the shift from process-centric to result-centric development and introduces the core concepts of the IDGL.
+
+### 2. The Mindset: The "How to Think"
+This is the doctrine for the practitioner. It provides the formal methodology and mental models for operating effectively within the new paradigm.
+
+*   **[The IDGL Philosophy](./00-idgl-philosophy.md):** Defines the tenets, principles, and mindset required to partner effectively with generative AI.
+
+### 3. The Practical Methodology: The "How to Do"
+These documents provide the specific, actionable engineering standards for executing generative tasks.
+
+*   **[The Anatomy of a Spec](./02-anatomy-of-a-spec.md):** The standard for authoring a high-quality Spec.
+*   **[The Artifact Lifecycle](./03-the-artifact-lifecycle.md):** The processes for generating, modifying, and sustaining software.
+*   **[The Communication Principles](./04-communication-principles.md):** The foundational skill for guiding any generative agent.
 
 ## IDGL Patterns: The Blueprints for Automation
 

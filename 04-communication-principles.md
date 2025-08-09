@@ -69,3 +69,22 @@ This pattern directly implements the **"Specify the Output Format"** and **"Form
 - > `Break this down into the required steps. Only include the truly necessary steps.`
 - > `Do not delete the existing comments.`
 - > `Answer in short.`
+
+### 4.5. The Procedural Intent Pattern
+This is an advanced pattern for complex, multi-part generative tasks. Instead of authoring a purely declarative `Spec` (which describes the final result), the practitioner authors a **procedural `Spec`** that includes a step-by-step process for the AI to follow. This delegates the orchestration of the task to the AI itself.
+
+**When to Use:** For large-scale tasks that require generating multiple, interdependent artifacts, such as scaffolding an entire application.
+
+**Trade-offs:**
+- **Pro:** Greatly simplifies the practitioner's workload by offloading the micro-management of the generation process. Fully leverages the AI's internal decomposition capabilities.
+- **Con:** Can be less predictable than a human-led, step-by-step process. Requires a more sophisticated `Spec` and a highly capable AI agent.
+
+```markdown
+**Example (A `Spec` for generating the NestJS backend):**
+> `Your task is to generate a complete NestJS backend. You must follow these steps in order:`
+> `1. First, analyze the domain models and generate all TypeORM entities.`
+> `2. Before proceeding, show me the generated entities for validation.`
+> `3. Next, using the validated entities, generate the DTOs for all create and update operations.`
+> `4. Once the DTOs are validated, proceed to generate the service classes...`
+> `(and so on)`
+```

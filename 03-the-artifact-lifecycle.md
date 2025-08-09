@@ -10,7 +10,7 @@ The core philosophy is to achieve a perfect **Generation**, where a well-formed 
 
 A Generative Task is the fundamental unit of execution in IDGL. Its scope is defined not by the theoretical capability of the AI, but by the practical limits of human validation. It has two universal properties:
 
-*   **Intent-Driven:** Its execution is governed entirely by a formal **[Spec](./01-the-conceptual-model.md#the-spec-the-authoritative-driver)**.
+*   **Intent-Driven:** Its execution is governed entirely by a formal **[Spec](./02-anatomy-of-a-spec.md)**.
 *   **Verifiable Scope:** Its scope must be constrained to what can be rigorously validated by a human expert.
 
 ## 3. The Generation Process

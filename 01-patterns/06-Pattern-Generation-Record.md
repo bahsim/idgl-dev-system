@@ -2,13 +2,13 @@
 
 ## Definition
 
-A **Generation Record** represents a distinct, high-level strategy or approach to solving a **Generative Task**. It serves as a container to be modified and refined until the strategy is either perfected or abandoned.
+A **Generation Record** represents a distinct, high-level strategy or approach to solving a **Generative Task**. It is the practical implementation of the core philosophical principle of **"Persist State to Overcome Context Limitations"** from the `00-idgl-philosophy.md` document. It serves as a container to be modified and refined until the strategy is either perfected or abandoned.
 
-The IDGL framework defines two feedback loops that determine how records are handled:
+The IDGL framework defines two feedback loops that determine how records are handled, which map directly to the processes defined in `03-the-artifact-lifecycle.md`:
 
-1.  **Internal Refinement (`Refinement --> AI_generation`):** When a validation check reveals minor discrepancies, the user enters a refinement loop. This involves making adjustments to the artifact for the *current strategy*. These modifications happen **within the existing `Generation Record`**, updating its state.
+1.  **The `Modification Process`:** When a validation check reveals minor discrepancies, the practitioner enters a refinement loop. This involves making adjustments to the artifact for the *current strategy*. These modifications happen **within the existing `Generation Record`**, updating its state.
 
-2.  **Strategic Re-prompting (`Validation --> Intent_formation`):** When an artifact is fundamentally misaligned with the goal, the user abandons the current strategy and returns to the `Intent Formation` stage. This action **creates a new `Generation Record`** to house the new strategic approach.
+2.  **The `Generation Process`:** When an artifact is fundamentally misaligned with the goal, the practitioner abandons the current strategy and initiates a new Generation Process. This action **creates a new `Generation Record`** to house the new strategic approach.
 
 ## Structure of a Record
 

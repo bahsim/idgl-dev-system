@@ -42,9 +42,11 @@ This is a comprehensive, project-level effort to onboard an entire legacy applic
 *   **When to Use:** When there is a strategic commitment to modernize an entire legacy system and you have dedicated resources for a large-scale documentation and structuring effort.
 *   **Process:** The onboarding is treated as a formal **Development Phase**.
     1.  **Main Goal:** "Onboard the legacy 'Monolith' project into the IDGL framework."
-    2.  **System Design:** This task analyzes the monolith and produces a spec that identifies its core architectural modules.
-    3.  **Comprehensive Plan:** This task creates a plan to execute an onboarding task for each identified module.
-    4.  **Execution:** The practitioner works through the generated tasks (e.g., `01_onboard_auth_module/`, `02_onboard_payment_module/`). The intent for each is to reverse-engineer the spec for that part of the legacy code.
+    2.  **System Design:** An AI-assisted task where the practitioner prompts an AI to analyze the monolith and produce a spec that identifies its core architectural modules.
+    3.  **Comprehensive Plan:** An AI-assisted task to create a plan to execute an onboarding task for each identified module.
+    4.  **Execution (Per Module):**
+        *   An AI agent is instructed to reverse-engineer a `Draft Spec` from the legacy code.
+        *   The **practitioner reviews and edits the `Draft Spec`**, correcting any logic to reflect the *desired* behavior, not just the existing buggy behavior. This human-led step produces the canonical `Spec v1.0`.
 *   **Result:** The `.idgl/sustaining/` directory is fully populated with the baseline structures for all modules of the legacy application, making the entire project ready for future sustaining work.
 
 ## Strategy 2: Just-in-Time Onboarding (as a Sustaining Activity)
@@ -55,6 +57,8 @@ This is a continuous, agile approach where parts of the legacy system are onboar
 *   **Process:**
     1.  A practitioner receives a task to fix a bug in a legacy module (e.g., the authentication system).
     2.  They navigate to `.idgl/sustaining/` and see that the `authentication/` folder does not yet exist.
-    3.  Their **first generative task** is to onboard the module. They create a new task, `sustaining/authentication/00_onboard_module/`, with the intent: "Analyze the legacy authentication code, generate its spec, and establish it as the baseline artifact."
-    4.  Once that task is complete and the baseline is established, they can then create their **second generative task** for the actual bug fix: `sustaining/authentication/fix-login-bug/`.
+    3.  **Onboarding Task:**
+        *   **Step A (AI-Generated Draft):** The practitioner's first generative task is to prompt an AI: *"Your task is to act as a reverse engineer. Analyze the attached legacy authentication code and generate a complete **Draft Spec** for it."*
+        *   **Step B (Human-Led Correction):** The practitioner carefully reviews the `Draft Spec`. They edit it to correct any logic, add missing edge cases, and ensure it represents the *correct, desired behavior* of the module. This produces the canonical `Spec v1.0`.
+    4.  **Bug-Fix Task:** Once the corrected `Spec v1.0` is established, the practitioner can then create their **second generative task** for the actual bug fix: `sustaining/authentication/fix-login-bug/`.
 *   **Benefit:** This creates a virtuous cycle. The system's spec coverage increases organically as developers touch different parts of the code. It avoids a large, upfront onboarding project and makes the creation of documentation a natural part of the maintenance process. 

@@ -1,4 +1,4 @@
-### Pattern: Task Decomposition (Sequential and Parallel)
+# Pattern: AI-Assisted Task Decomposition
 
 #### 1. Context
 
@@ -19,9 +19,24 @@ A high-level goal cannot be achieved in a single generative task (violating the 
 
 In these cases, a structured method is needed to split the work without introducing unnecessary planning overhead or losing the benefits of AI-driven generation.
 
-#### 3. Solution
+#### 3. Solution: The AI-Assisted Workflow
 
-Employ **Task Decomposition**: the deliberate and minimal split of one high-level intent into a small number of substantial, independently verifiable generative tasks.
+Employ **Task Decomposition**: the deliberate and minimal split of one high-level intent into a small number of substantial, independently verifiable generative tasks. This is a collaborative process where the practitioner guides an AI agent to create the plan.
+
+##### Step 1: The High-Level Prompt
+The practitioner initiates the process with a prompt to the AI, asking it to act as an architect and propose a decomposition plan based on the high-level intent.
+
+> **Example Prompt:** "My goal is to 'Refactor a monolithic UI component into smaller, testable sub-components.' The component is ~800 lines. Your task is to act as a senior software architect. Propose a detailed decomposition plan. For each sub-task, define its inputs, outputs, contracts, and validation criteria. Use a mix of sequential and parallel steps where appropriate. Present the plan as a Mermaid diagram and a detailed task specification list."
+
+##### Step 2: AI-Generated Plan
+The AI analyzes the request and generates a candidate decomposition plan, including a diagram, task list, contracts, and validation steps.
+
+##### Step 3: Human Validation and Refinement
+The practitioner's critical role is to review and validate the AI's proposed plan. They can then approve the plan or provide feedback for refinement.
+
+> **Example Refinement Prompt:** "The overall structure is good, but the contracts between the new sub-components are not well-defined. Please update the 'Analyze & Design Architecture' task to output a formal JSON or YAML specification defining the precise props and interfaces for each new component. All subsequent tasks must use this specification as their primary input contract."
+
+This loop continues until the practitioner is satisfied with the AI-generated plan.
 
 ##### Core Requirements
 
@@ -48,7 +63,9 @@ Execution is limited to two simple modes:
 
 This approach keeps coordination lightweight and avoids complex, roadmap-heavy planning for what should be a straightforward structural split.
 
-#### 4. Implementation Details: The Decomposition Plan
+#### 4. The AI-Generated Decomposition Plan
+
+This section contains the detailed artifacts that are the output of the AI-assisted workflow.
 
 ##### Task Definition Schema
 
@@ -93,7 +110,7 @@ A decomposition plan can be represented as:
 
 No canonical manifest or complex tooling is required.
 
-#### 5. Examples of Task Decomposition
+#### 5. Examples of AI-Generated Decomposition Plans
 
 ##### Example 1: Multi-Stage UI Component Refactoring
 
@@ -101,7 +118,7 @@ No canonical manifest or complex tooling is required.
 
 **Why Decomposition:** The monolithic component is 800+ lines, requires architectural decisions, and needs parallel implementation of independent sub-components.
 
-**Decomposition (Sequential + Parallel):**
+**AI-Generated Plan (Diagram):**
 
 ```mermaid
 graph TD
@@ -114,7 +131,7 @@ graph TD
   C3 --> D
 ```
 
-**Task Specifications:**
+**AI-Generated Plan (Task Specifications):**
 
 1. **Analyze & Design Architecture**
    - Input: Monolithic component source code
@@ -145,7 +162,7 @@ graph TD
 
 **Why Decomposition:** Changes span multiple architectural layers with different validation requirements and expertise.
 
-**Decomposition (Sequential):**
+**AI-Generated Plan (Sequential):**
 
 ```mermaid
 graph TD
@@ -154,7 +171,7 @@ graph TD
   C --> D[Add Integration Tests]
 ```
 
-**Task Specifications:**
+**AI-Generated Plan (Task Specifications):**
 
 1. **Design & Generate DB Schema Changes**
    - Input: Current schema + tagging requirements
@@ -179,7 +196,7 @@ graph TD
    - Output: End-to-end test suite
    - Validation: All scenarios covered, tests pass
 
-#### 6. Advanced Patterns
+#### 6. Advanced AI-Assisted Patterns
 
 ##### Pattern: Exploratory Decomposition
 

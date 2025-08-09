@@ -2,7 +2,9 @@
 
 ## 1. Introduction: The Blueprint for Generation
 
-This document provides the formal specification for authoring a high-quality Spec. The Spec is the engineering blueprint that guides the entire **[Artifact Lifecycle](./03-the-artifact-lifecycle.md)**. Its quality is the single greatest predictor of the quality of the final Digital Product.
+This document provides a conceptual guide for authoring a high-quality Spec. The Spec is the engineering blueprint that guides the entire **[Artifact Lifecycle](./03-the-artifact-lifecycle.md)**. Its quality is the single greatest predictor of the quality of the final Digital Product.
+
+It is crucial to understand that the "anatomy" described here is a **flexible conceptual model, not a rigid template.** The practitioner's goal is to capture their intent with clarity. The structure of the `Spec` should serve that goal. For simple tasks, the `Spec` might be a brief, declarative list of criteria. For complex tasks, it may evolve into a detailed, procedural guide.
 
 A professional Spec is designed for two audiences: the human expert who must validate the output, and the AI that must generate it. It achieves this by being a direct reflection of the author's clarity and intent.
 
@@ -17,15 +19,23 @@ Mastering these two principles is what elevates Spec authoring from a clerical t
 
 ## 3. The Anatomy: From Intent to Executable Contract
 
-The structure of a Spec is designed to translate the author's disciplined thought into an executable contract that the AI can understand and a human can verify.
+The structure of a Spec is designed to translate the author's disciplined thought into an executable contract that the AI can understand and a human can verify. It is composed of three core parts: the Objective, the Rationale, and the Verification Criteria.
 
-### 3.1. The Objective: Defining the "What"
+### 3.1. Practical Flavors of a Spec
+While the `Spec` is a single concept, in practice it can take several flavors depending on its purpose. A comprehensive generative task will often compose several of these, using the sections below as containers for each type of information.
+
+*   **Product Spec:** Defines user stories, flow diagrams, and KPIs.
+*   **Technical Spec:** Outlines interfaces, data contracts, and performance budgets.
+*   **Safety/Governance Spec:** Contains red-team prompts, ethical boundaries, and legal constraints.
+*   **Test Spec:** Provides formal input/output pairs and property-based assertions.
+
+### 3.2. The Objective: Defining the "What"
 The Spec must begin with a clear, explicit, and concise statement of the primary objective. This is the direct application of the "Discipline of Thought" principle.
 
 **Example:**
 > Create a reusable React hook named `useDebounce` that takes a value and a delay time, and returns the debounced value.
 
-### 3.2. The Rationale: Explaining the "Why"
+### 3.3. The Rationale: Explaining the "Why"
 The Spec must provide the necessary context and constraints. This section is where the author **establishes the AI's persona**, setting it to the desired expert context (e.g., "You are a senior frontend developer specializing in performant React applications").
 
 *   **Business Rationale:** The business rules, goals, or user value that justify the task.
@@ -34,7 +44,7 @@ The Spec must provide the necessary context and constraints. This section is whe
 **Example:**
 > The hook will be used in our application's search bar to prevent excessive API calls while the user is typing. It must be written in TypeScript, use modern functional component patterns, and must not rely on any external libraries for the debouncing logic.
 
-### 3.3. The Verification Criteria & Exemplars: Specifying the "How"
+### 3.4. The Verification Criteria & Exemplars: Specifying the "How"
 This section makes the Spec an executable contract by explicitly **specifying the output format**. The criteria must be a clear, verifiable checklist, and concrete examples should be provided wherever possible.
 
 **Verification Criteria Example:**
@@ -66,7 +76,12 @@ The core principle that elevates a good Spec to a great one is **enrichment**: t
 
 An enriched Spec does not need to be long, but it must be precise. It forces the author to think through the complete behavior of the desired artifact, including edge cases and error conditions.
 
-### Enriched Verification Criteria Example
+### 5.1. Authoring Technique: Procedural Specs for Complex Tasks
+For a large or complex generative task (e.g., "generate an entire backend application"), the `Spec` can be authored as a **procedural, step-by-step plan** for the AI to follow. This is a powerful technique for delegating the orchestration of a complex generation to the AI itself, leveraging its native planning capabilities. This is the ultimate form of enrichment.
+
+This does not represent a different "type" of `Spec`, but rather a different authoring style suited to the complexity of the task.
+
+### 5.2. Example: Enriched Verification Criteria
 This example shows an enriched version of the `useDebounce` criteria from section 3.3.
 
 > #### Verification Criteria
