@@ -24,6 +24,14 @@ This process works as follows:
 
 This cycle transforms a "lucky" outcome, which is unreliable, into a **repeatable, engineered result**. It elevates the development system from one that is merely "good enough" (producing variable results) to one that **explicitly and reliably demands excellence** by design.
 
+## Where to Start: The End-to-End Tutorial
+
+The best way to understand the IDGL is to see it in action. Before diving into the detailed methodology, we recommend starting with our end-to-end practical tutorial.
+
+*   **[End-to-End Tutorial: Creating a React Hook](./02-implementation/02-end-to-end-tutorial/00-tutorial-overview.md)**
+
+This tutorial walks through a complete, realistic Generative Task, from a high-level idea to a fully tested and validated software component. It is the most direct way to get a feel for the new development loop and the role of the IDGL practitioner.
+
 ## The Core Methodology
 
 The core methodology is defined by the following four documents, which establish the expert-level standard for the system. They should be read in order:

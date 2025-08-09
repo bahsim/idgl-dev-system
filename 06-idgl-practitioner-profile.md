@@ -2,44 +2,44 @@
 
 ## Definition
 
-An **IDGL Practitioner** is a human expert who directs artificial intelligence through the Intent-Driven Generative Lifecycle. Unlike a traditional developer who writes code directly, or a prompt engineer who focuses on crafting individual prompts, the IDGL Practitioner's core responsibility is to maintain the authoritative **Spec** as the single source of truth.
+An **IDGL Practitioner** establishes and enforces contracts between human intent and artificial intelligence through the Intent-Driven Generative Lifecycle. Unlike traditional roles that interact with AI as an assistant, the IDGL Practitioner maintains the **Spec** as a binding contract that AI must fulfill.
 
 ## Core Responsibilities
 
-1. **Intent Stewardship**
-   - Translate business goals into precise, verifiable technical Specs
-   - Keep the Spec self-contained and unambiguous
-   - Ensure every material change has explicit acceptance criteria
+1. **Contract Definition**
+   - Transform business requirements into formal, verifiable Specs
+   - Ensure Specs are complete and unambiguous
+   - Define explicit acceptance criteria for verification
 
-2. **AI Direction**
-   - Provide curated, minimal context to the AI
-   - Set clear constraints and guardrails
-   - Demand "tests by default" in generated artifacts
+2. **Execution Framework**
+   - Set precise boundaries of implementation scope
+   - Define non-negotiable constraints
+   - Require verification artifacts in deliverables
 
-3. **Validation Authority**
-   - Accept or reject artifacts based solely on the Spec
-   - Require concrete evidence (tests, logs) over persuasion
-   - Maintain the Spec's authority over generated code
+3. **Contract Enforcement**
+   - Validate deliverables against Spec requirements
+   - Accept only evidence-backed implementations
+   - Reject any deviation from Spec contract
 
-4. **Generation Record Management**
-   - Preserve key decisions and artifacts
-   - Start new records for strategy changes
-   - Keep history auditable and reproducible
+4. **Contract Record**
+   - Document all contract terms and decisions
+   - Version control contract changes
+   - Maintain verifiable generation history
 
 ## Key Principles
 
-- The Spec is the source of truth; code must conform to it
-- Every change needs verification artifacts
-- Maximize cohesive scope while keeping validation tractable
-- Never rewrite history; create new records instead
+- Spec is a binding contract, not a guideline
+- Every contract requires verification artifacts
+- Scope must be complete yet verifiable
+- Contract history is immutable
 
 ## Anti-Patterns
 
-- Generating code without a formal Spec
-- Adjusting requirements to match generated output
-- Writing tests after acceptance
-- Losing prompts or context used for generation
+- Operating without a formal contract (Spec)
+- Modifying contract to match implementation
+- Accepting unverified deliverables
+- Losing contract context or history
 
 ## Summary
 
-The IDGL Practitioner succeeds not by writing code, but by rigorously defining and validating what code should be written. They are the guardian of intent, ensuring AI remains a powerful but controlled tool in service of clear human objectives.
+The IDGL Practitioner succeeds by establishing and enforcing clear contracts between intent and implementation. They are the contract authority, ensuring every generated artifact strictly adheres to specified requirements.
