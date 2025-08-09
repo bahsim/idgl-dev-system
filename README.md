@@ -40,3 +40,7 @@ Once you have a firm grasp of the core methodology, you can explore the optional
 Unlike the mandatory Core Methodology, Patterns are formalized, reusable solutions to recurring challenges in a human-AI development lifecycle. They are the **architectural blueprints for an automated IDGL toolchain.**
 
 While the formality of the IDGL process provides structure, it is not intended to create manual "paperwork." This routine is explicitly designed to be alleviated by a suite of automation tools — from simple scripts to a dedicated development server—that handle the boilerplate, manage the data flows, and enforce the architectural consistency defined in the Patterns.
+
+## Core Roles
+
+- IDGL Practitioner: See [The IDGL Practitioner Profile](./06-idgl-practitioner-profile.md).
