@@ -24,3 +24,48 @@ A new generation AI operator must master a **basic logical-structural culture**:
 The operator must understand the principles of feedback, and be able to read and double-check the AI's output, not just blindly trust it. This requires the development of **critical thinking** and the basics of semiotics: how meanings are turned into signs, and how signs transform meaning. This requires interdisciplinary maturity, because the role of the AI is a reflection of the operator's own thought process.
 
 Finally, the operator must **respect the energy of attention**—both their own and the model's. They must not overload or obscure their requests. They must learn restraint, clarity, and conciseness. It is from this discipline that true collaboration is born, where intelligence is not a machine and not a human, but a link in a new language.
+
+## 4. Practical Communication Patterns
+
+While the principles above are the foundation, expert practitioners operationalize them through a set of repeatable communication patterns. These are not part of a formal `Spec`, but are the real-time techniques used to guide the AI during the interactive process of generation and refinement.
+
+### 4.1. The Persona Mandate Pattern
+This pattern directly implements the **"Establish the AI's Role"** principle. It sets the quality bar and the context for the AI's response by assigning it a specific, expert persona.
+
+**When to Use:** At the beginning of a task, or when the AI's output is too generic or lacks the required depth.
+
+**Examples:**
+- > `Proceed like a senior software developer.`
+- > `Act as a 10x engineer.`
+- > `You are a database architect specializing in PostgreSQL.`
+
+### 4.2. The Socratic Refinement Pattern
+This pattern is used to debug a failed generation or to help an AI that is "stuck." Instead of fixing the output directly, the practitioner uses questions to help the AI diagnose the problem itself. This is the core of the **`Refine Intent`** loop.
+
+**When to Use:** When a generated artifact has an error, or when the AI produces a low-quality or incomplete response.
+
+**Examples:**
+- > `Write three reasoning paragraphs analyzing what the error might be. Do not jump to conclusions.`
+- > `If you were a senior software developer working on this project, what type of context would you need to solve this error? Tell me step-by-step instructions on how I can give you that context.`
+- > `Start the reasoning paragraph with lots of uncertainty and slowly gain confidence as you think about the item more.`
+
+### 4.3. The Trade-off Analysis Pattern
+This pattern leverages the AI's generative power to explore the **Solution Space** during the **"System Design / Spec"** phase. The practitioner asks the AI to generate and argue for multiple solutions, helping the human make a better-informed final decision.
+
+**When to Use:** When facing a complex architectural decision or when multiple implementation strategies are possible.
+
+**Examples:**
+- > `Introduce several options and provide arguments for them. Then, select the most relevant one and justify your choice.`
+- > `Before you answer, write two detailed paragraphs, one arguing for each of these two solutions. Do not jump to conclusions. Then tell me which one is better and why.`
+
+### 4.4. The Output Contract Pattern
+This pattern directly implements the **"Specify the Output Format"** and **"Formulate the Goal Explicitly"** principles. It gives the AI precise, non-negotiable constraints on the structure, content, and completeness of its output.
+
+**When to Use:** In any generative task where the format of the result is important for downstream use (e.g., code, configuration, documentation).
+
+**Examples:**
+- > `Show me the exact code changes needed; don't just describe what to do. I want to see the before and after.`
+- > `Do not stop working on this until you've implemented this feature fully and completely.`
+- > `Break this down into the required steps. Only include the truly necessary steps.`
+- > `Do not delete the existing comments.`
+- > `Answer in short.`
