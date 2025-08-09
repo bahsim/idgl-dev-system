@@ -41,11 +41,21 @@ graph TD
     subgraph New Paradigm Loop
         A(Intent) -- "Generate" --> B(Result);
         B -- "Evaluate" --> C{Does it meet Intent?};
-        C -- No --> D(Refine Intent);
+        C -- No --> D(Refinement Process);
         D --> A;
         C -- Yes --> E(Done);
     end
 ```
+
+### The Art of Refinement
+
+Because generation is fast and cheap, the **Refinement Process** is not a simple, linear correction. It is a rich, creative space where a practitioner can use sophisticated strategies to improve the `Intent`. These strategies include:
+
+*   **Multi-Variant Generation:** The practitioner can instruct the AI to generate multiple versions of the artifact based on the same `Intent`. They can then use the AI as a thinking partner to compare the trade-offs of each version, selecting the best approach to incorporate back into the `Spec`.
+
+*   **AI-Assisted Decomposition:** For a complex `Intent`, the practitioner can use the AI's analytical capabilities to break it down into a series of smaller, more manageable sub-intents. The AI helps to create the plan, which the practitioner then validates and executes.
+
+*   **Pre-computation of Intermediates:** Instead of generating the entire artifact at once, the practitioner can generate "semi-finished products" or reusable details in advance. This allows for faster experimentation and composition of the final `Solution` from a palette of pre-generated, validated components.
 
 The challenge is no longer about managing the labor of construction, but about mastering the discipline of thought required to create an executable specification. We are moving from being assemblers to being architects.
 
