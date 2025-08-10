@@ -15,9 +15,9 @@ The Intent-Driven Generative Lifecycle (IDGL) is a formal methodology for buildi
 
 At its heart, IDGL establishes a new "social contract" between a human engineer and their AI counterpart. It posits that for this partnership to be effective, scalable, and safe, it must be governed by a clear, formal, and auditable process. This process is designed to maximize the velocity of AI-driven generation while retaining the critical oversight and authority of human judgment.
 
-## 3. The Core Tenets
+## 3. The Core Principles
 
-The IDGL philosophy is built upon four foundational principles that govern the entire lifecycle.
+The IDGL philosophy is built upon these foundational principles that govern the entire lifecycle.
 
 ### 3.1. Human Intent is Authoritative and Executable
 
@@ -31,13 +31,25 @@ IDGL views the AI as an incredibly powerful engine for synthesis and generation 
 
 However, the AI is a partner in execution, not in judgment. The act of **`Validation`** — the expert appraisal of the generated Artifact against the Spec's criteria—remains the exclusive and essential responsibility of the human engineer. This creates a powerful partnership that leverages the unique strengths of both parties: human strategic thinking, architectural vision, and qualitative judgment, paired with the AI's boundless capacity for tactical execution.
 
-### 3.3. The Development Lifecycle is a Formal, Auditable Process
+### 3.3. The Critical Distinction: Planning vs. Execution
+
+A disciplined practitioner understands that the AI's role as an executor is a powerful capability, but also one that carries a strategic risk. If the AI is used to execute every task, the human developer risks losing deep knowledge and ownership of the codebase, becoming a mere "prompt manager."
+
+To prevent this, the practitioner must make a conscious choice about how to wield the AI's power. A common and highly effective strategy is to use the AI primarily as a world-class **planning partner** while reserving the act of **execution** for oneself. In this workflow:
+
+1. The human writes an initial plan or `Spec`.
+2. The AI is used to critique, refine, and enrich that plan.
+3. The human then **manually executes** the superior, AI-assisted plan.
+
+This approach ensures the practitioner "owns the work." It uses the AI to enhance their strategic thinking without sacrificing the critical learning and intuition that comes from the hands-on work of implementation. This is the very essence of "The Practitioner, Not the Process."
+
+### 3.4. The Development Lifecycle is a Formal, Auditable Process
 
 IDGL replaces the chaotic, opaque nature of ad-hoc prompting with a structured, repeatable, and transparent lifecycle. Every Artifact within the system is the result of a well-defined process—**`Generation`**, **`Modification`**, or **`Sustaining`**.
 
 This formality is the bedrock of trust and governance. It ensures that every digital product can be traced back to its originating Spec and the sequence of generative tasks that produced it. This creates an auditable chain of custody from intent to implementation, making the entire system transparent and predictable by design.
 
-### 3.4. Scalability is Achieved Through Composition and Reusable Patterns
+### 3.5. Scalability is Achieved Through Composition and Reusable Patterns
 A single generative task is powerful, but it is not sufficient to build a complex system. IDGL achieves scale through two mechanisms: composition and the reuse of established patterns.
 
 First, complex systems are built by composing atomic, verifiable **`Generative Tasks`**. Second, this composition is managed by a catalog of **`IDGL Patterns`**—formal blueprints for solving recurring architectural challenges.
@@ -92,8 +104,13 @@ The IDGL is more than a process; it is a mindset shift driven by the new economi
 ### 6.1. Refinement is the Core Act of Creation
 In the old paradigm, refinement (debugging, refactoring) was a costly act of correction. In the generative paradigm, it is the primary, essential act of creation. The first generated result is not expected to be perfect. It is the raw clay. The practitioner's main work is to iteratively refine the `Spec` through multiple generations until the artifact is sculpted to perfection.
 
-### 6.2. Embrace Rapid, Imperfect First Drafts
-The high cost of manual coding forced a culture of extensive upfront planning to "get it right the first time." This is no longer necessary or efficient. It is now almost always cheaper and faster to generate a "good enough" first version based on a lean `Spec`, and then use that concrete artifact to inform a more sophisticated series of refinements. The practitioner should have a bias for action, knowing that refinement is cheap.
+### 6.2. Use First Drafts to Overcome Creative Inertia
+
+The greatest challenge in any creative endeavor is the anxiety of the "blank page." It is difficult for anyone to forecast all the details of a complex system in the abstract. The generative paradigm offers a powerful antidote to this creative inertia.
+
+By generating a rapid, imperfect first draft, the practitioner immediately transforms an abstract problem into a concrete artifact. This tangible result—even if flawed—provides substantive material to critique, analyze, and improve upon from the very beginning. This process is not about getting it right the first time; it is about getting something *real* the first time, so that the more natural and intuitive human skill of refinement can take over.
+
+A practitioner should therefore have a bias for action, using the AI to quickly produce a "good enough" first version based on a lean `Spec`. This act kickstarts the development process and provides the momentum needed for deep, substantive refinement.
 
 ### 6.3. Persist State to Overcome Context Limitations
 A key challenge of working with AI agents is their limited context window. A practitioner must not allow valuable progress to be lost. This is solved by diligently persisting the state of a generative task. This includes saving successful intermediate results, the specific prompts used, and validated code snippets to a file. This practice transforms an ephemeral AI conversation into a durable, auditable, and repeatable engineering process, allowing the practitioner to resume a complex task without losing context.

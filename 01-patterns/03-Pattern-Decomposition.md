@@ -38,6 +38,16 @@ The practitioner's critical role is to review and validate the AI's proposed pla
 
 This loop continues until the practitioner is satisfied with the AI-generated plan.
 
+##### IV. Strategic Consideration: Choosing the Executor
+
+Once a satisfactory plan has been generated and validated, the practitioner faces a critical strategic choice: **who executes the sub-tasks?** In keeping with the core IDGL philosophy of "The Practitioner, Not the Process," the answer is not always the AI.
+
+1.  **AI as Executor:** This is the default path for well-defined, routine tasks where speed is the primary concern. The practitioner feeds the `Spec` for each sub-task to the AI for generation.
+
+2.  **Human as Executor:** This is a disciplined and often superior choice for tasks where long-term ownership, deep learning, and nuanced implementation are more important than raw speed. The practitioner uses the AI-generated plan as a world-class blueprint to guide their own hands-on coding.
+
+This second approach is the most effective guardrail against the "AI owning the work." It ensures the practitioner builds and retains a deep, intuitive understanding of the codebase, using the AI as a powerful partner in the strategic planning phase rather than a replacement in the execution phase. The choice of executor is a deliberate act of engineering judgment.
+
 ##### Core Requirements
 
 Each decomposed sub-task must have:

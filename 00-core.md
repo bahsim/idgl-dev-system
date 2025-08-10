@@ -37,7 +37,7 @@ In this paradigm, iteration does not happen on the code; it happens on the **int
 The practitioner's focus shifts to **a more effective loop** of refining the specification itself. This loop is composed of four distinct components:
 
 1.  **The Intent (The `Spec`):** This is the authoritative, version-controlled definition of a desired outcome. It is a formal specification, authored by a human, that describes what to build, why it's needed, and how to validate its correctness.
-2.  **The Generation (The `AI`):** The AI acts as a powerful synthesis engine. Its role is to take the formal `Spec` and generate a candidate **Artifact** for evaluation.
+2.  **The Generation (The `AI`):** The AI is best understood not as a pure creator, but as an advanced **generative search engine**. It analyzes the `Spec` and searches a vast, latent solution space (derived from its training data) for the most relevant and popular solutions that match the constraints. The "art of getting it" is therefore a process of playful, trial-and-error refinement, where each generation helps the practitioner better understand the details of what they need, allowing them to provide better constraints for the next "search."
 3.  **The Evaluation (The `Validation`):** This is the essential act of human judgment that serves as the system's quality gate. The criteria defined in the `Spec` are used to verify the AI-generated Artifact.
 4.  **The Result (The `Digital Product`):** This is the tangible, **validated output** of the cycle. It is an Artifact that has successfully passed the Validation stage.
 
@@ -52,9 +52,32 @@ graph TD
     end
 ```
 
+### A Note on "Generation": The Choice of Executor
+
+It is crucial to understand that the "Generate" step in this loop represents the **realization of the `Spec` into a tangible `Result`**. It does not strictly imply a hands-off, fully automated AI action.
+
+The agent that performs the generation can be:
+*   **An AI Agent:** The most common case, where the AI writes the code based on the `Spec`.
+*   **A Deterministic Script:** For predictable tasks, the "generator" might be a template engine or a scaffolding script.
+*   **The Human Practitioner:** This is a vital and disciplined choice. A practitioner may choose to execute the `Spec` manually, using the AI-refined plan as a superior blueprint to guide their own coding. This approach maximizes the practitioner's learning, ownership, and deep understanding of the final work, preventing the dangerous outcome of "the AI owning the work."
+
+This choice of executor is a strategic decision made by the `IDGL Practitioner` and is a core part of the methodology's flexibility and power.
+
 ### The Art of Refinement
 
-Because generation is fast and cheap, the **Refinement Process** is not a simple, linear correction. It is a rich, creative space where a practitioner can use sophisticated strategies to improve the `Intent`. These strategies include:
+The **Refinement Process** is the creative heart of the IDGL. It is not a simple act of correction, but the primary engine of discovery and improvement. By using an AI to generate a rapid first draft, the practitioner overcomes the initial "blank page" anxiety and immediately obtains a tangible artifact to work with. This allows the more natural and intuitive human skill of critique and improvement to drive the development process forward.
+
+```mermaid
+graph TD
+    subgraph Continuous Refinement
+        direction LR
+        A(Intent) -- Generation --> B(Result);
+        B -- Refinement --> A;
+    end
+```
+
+
+Because generation is fast and cheap, this refinement is not a single, linear correction. It is a rich, creative space where a practitioner can use sophisticated strategies to improve the `Intent`. These strategies include:
 
 *   **Multi-Variant Generation:** The practitioner can instruct the AI to generate multiple versions of the artifact based on the same `Intent`. They can then use the AI as a thinking partner to compare the trade-offs of each version, selecting the best approach to incorporate back into the `Spec`.
 
