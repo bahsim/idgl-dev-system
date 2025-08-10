@@ -119,6 +119,8 @@ graph TD
 
 While the formality of the IDGL process provides structure, it is not intended to create manual "paperwork." This routine is explicitly designed to be alleviated by a suite of automation tools — from simple scripts to a dedicated development server—that handle the boilerplate, manage the data flows, and enforce the architectural consistency defined in the Patterns.
 
+The IDGL, as a pure methodology, is a good and necessary start. However, the logical continuation of its evolution is the **Agentic-Driven Generative Lifecycle (ADGL)**: an opinionated, automated framework that brings the IDGL's principles to life. For a concrete guide on implementing this next stage, see the **[ADGL Framework](./03-adgl-framework/)**.
+
 ## Core Roles
 
 - IDGL Practitioner: See [The IDGL Practitioner Profile](./06-idgl-practitioner-profile.md).
