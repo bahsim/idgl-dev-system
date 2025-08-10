@@ -25,6 +25,9 @@ graph TD
 
 ## The New Paradigm: The Authority of the Result
 
+> "In an era where AI transforms software development, the most valuable skill isn't writing code - it's communicating intent with precision."  
+> — Sean Grove, OpenAI
+
 The agentic model, as defined by the Intent-Driven Generative Lifecycle (IDGL), proposes **a complete change in approach**. The process is no longer the focus. The generative power of AI makes the act of "coding" **very fast and easy to produce**.
 
 - **The Core Problem:** How do we define a perfect, desired result with such precision and clarity that a machine can generate it whole?
