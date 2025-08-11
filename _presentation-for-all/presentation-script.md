@@ -147,3 +147,30 @@ We no longer ask the client to imagine a solution; we present them with a concre
 *   **Slide 12: The Future is a Calibrated Partnership**
     *   **Title:** Your Future Role: The System Designer & AI Calibrator.
     *   **Link to the documentation repository.**
+---
+### Slide 14: Our Proposal: The Vanguard Project
+
+**Visual:** A simple, clear 3-step diagram. 1. A small icon of two "key" developers working on a `Spec`. 2. An icon of a clock with a plus sign, labeled "Time Dividend." 3. The two key developers are now shown mentoring a larger group.
+
+**(Script):**
+
+"So where do we begin? The answer is not a massive, top-down training initiative. The answer is to do what we do best: build something real.
+
+We propose a **Vanguard Project**.
+
+First, we take a small team of 2-3 of our most trusted developers. We give them one, high-impact project slice, and they deliver it using this methodology. They produce not only a validated result, but also the project's first reference-quality `Spec`.
+
+Second, this success creates a **Time Dividend**. Having mastered the workflow, this team is now significantly faster.
+
+And third, they invest that new time back into the organization, mentoring other teams, not with lectures, but by co-authoring `Spec`s with them, scaling the mindset through the entire organization.
+
+This is the first step. It's pragmatic, it's low-risk, and it proves the value from day one."
+
+---
+### Slide 15: Q&A
+
+**Visual:** A simple, clean slide with your contact information and a link to the full documentation repository.
+
+**(Script):**
+
+"Thank you. I'm now happy to answer any questions you may have."

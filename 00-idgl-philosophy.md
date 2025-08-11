@@ -11,7 +11,7 @@ The entire IDGL is governed by three timeless principles. They are the ultimate 
 
 ## 2. Introduction
 
-The Intent-Driven Generative Lifecycle (IDGL) is a formal methodology for building digital products in an age of powerful generative AI. It is not merely a set of best practices for "prompt engineering," but rather a complete engineering discipline designed to orchestrate human-AI collaboration at scale.
+The Intent-Driven Generative Lifecycle (IDGL) is a formal methodology for building digital products in an age of powerful generative AI. It is not merely a set of best practices for "prompt engineering," but rather a complete engineering discipline designed to orchestrate human-AI collaboration at scale. Without such a discipline, the unpredictable nature of AI-driven work can leave practitioners feeling more like **gamblers than architects**, hoping for a lucky outcome rather than engineering a predictable one.
 
 At its heart, IDGL establishes a new "social contract" between a human engineer and their AI counterpart. It posits that for this partnership to be effective, scalable, and safe, it must be governed by a clear, formal, and auditable process. This process is designed to maximize the velocity of AI-driven generation while retaining the critical oversight and authority of human judgment.
 
@@ -77,6 +77,9 @@ AI-generated solutions must be **complete and functional**, not fragments requir
 
 ### 4.6. Strategic Coherence
 All work must maintain **alignment with the overarching strategic intent**, even as tactical approaches evolve. If implementation reveals new information that challenges the current approach, the response should be to evolve the strategy coherently, not to abandon it.
+
+### 4.7. Client-Centricity
+The ultimate goal of the IDGL is not just to improve internal development efficiency, but to deliver superior value to the client. The speed and flexibility of the generative loop should be leveraged to shorten feedback cycles, reduce requirement ambiguity, and make the client an empowered, active participant in the design process. A successful IDGL implementation results in a happier, more engaged client who gets the right product, faster.
 
 ## 5. Anti-Patterns: What to Avoid
 

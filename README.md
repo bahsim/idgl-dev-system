@@ -1,3 +1,19 @@
+> "In an era where AI transforms software development, the most valuable skill isn't writing code - it's communicating intent with precision."  
+> — Sean Grove, OpenAI
+
+# Welcome to the AI-Native SDLC
+
+The world of software is undergoing a fundamental transformation. The old Software Development Lifecycle (SDLC) is slowly but surely being "AI-ized," as every role and process evolves to incorporate artificial intelligence. This is not a temporary trend; it is the birth of a new, **AI-native development system.**
+
+The **Intent-Driven Generative Lifecycle (IDGL)** is a first-principles blueprint for this new world. It is a lightweight, pragmatic methodology built on a single, powerful premise: **human intent**, captured in a formal `Spec`, must be the primary, authoritative source of truth. Our goal is no longer to manually code a solution, but to craft a perfect `Spec` and then use AI to search a vast solution space for the best possible implementation.
+
+This is a system for engineers who want to be **architects, not gamblers.** It provides the discipline to turn the unpredictable "magic" of AI into a predictable engineering process. It's guided by three timeless principles: **YAGNI**, **Embrace Alternatives**, and—most importantly—**The Practitioner, Not the Process.**
+
+Crucially, the IDGL is a system that was **used to define itself.** This very documentation is the "proof-of-work," created through the same `spec -> generate -> evaluate -> refine` loop that it describes. It is a complete, expert-level system for developing software in partnership with artificial intelligence.
+
+Welcome aboard the bus to the train of progress.
+
+---
 # The IDGL Development System: A Blueprint for the AI-Native SDLC
 
 ## The Inevitable AI-ization of Software Development
@@ -119,8 +135,18 @@ graph TD
 
 While the formality of the IDGL process provides structure, it is not intended to create manual "paperwork." This routine is explicitly designed to be alleviated by a suite of automation tools — from simple scripts to a dedicated development server—that handle the boilerplate, manage the data flows, and enforce the architectural consistency defined in the Patterns.
 
-The IDGL, as a pure methodology, is a good and necessary start. However, the logical continuation of its evolution is the **Agentic-Driven Generative Lifecycle (ADGL)**: an opinionated, automated framework that brings the IDGL's principles to life. For a concrete guide on implementing this next stage, see the **[ADGL Framework](./03-adgl-framework/)**.
+The IDGL, as a pure methodology, is a good and necessary start. However, the logical continuation of its evolution is the **Agentic-Driven Generative Lifecycle (ADGL)**: an opinionated, automated framework that brings the IDGL's principles to life. For a concrete guide on implementing this next stage, see the **[ADGL Framework](./03-ad-framework/)**.
 
 ## Core Roles
 
 - IDGL Practitioner: See [The IDGL Practitioner Profile](./06-idgl-practitioner-profile.md).
+
+## Why This Matters: The Bus to the Train of Progress
+
+The world of AI is changing at an incredible speed. The temptation to fall behind is real, just as is the paradox of "not having time" to learn the very tools that promise to save us time. It can feel like trying to catch a train of progress that is already moving into the distance.
+
+The IDGL is the bus to that train.
+
+It is a lightweight, pragmatic system designed to go *with* the AI flow, not against it. The effort spent to comprehend and internalize this methodology has an immediate ROI, boosting productivity enough to create the very time needed to master it. It is the right instrument for this moment of transition, providing the structure needed to make the AI transformation real and concrete today, while being designed to naturally evolve into the fully-fledged, automated ADGL framework of tomorrow.
+
+As sharing brings greater rewards than hoarding, this system is open for all. Welcome aboard.

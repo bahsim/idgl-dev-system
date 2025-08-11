@@ -94,3 +94,5 @@ This is an advanced pattern for complex, multi-part generative tasks. Instead of
 > `4. Once the DTOs are validated, proceed to generate the service classes...`
 > `(and so on)`
 ```
+
+*   **Demand for Epistemic Humility:** This pattern addresses the risk of AI "hallucination" or fabrication. The practitioner explicitly instructs the AI to admit when it does not have a high-confidence answer based on its training data, rather than inventing a plausible-sounding but incorrect one. This can be done by adding a clear instruction to the prompt, such as: *"If you do not know the answer or cannot provide a solution with high certainty, state that you do not know. Do not fabricate an answer."* This makes the interaction safer and more reliable.

@@ -30,7 +30,7 @@
 *   **Slide 4: The Core Paradigm Shift: The New Loop**
     *   **Title:** Shifting from a "Code-First" to a "Spec-First" World.
     *   **Key Message:** The fundamental change is moving the iteration cycle away from the code and onto the specification. We refine the *intent*, not the output.
-    *   **Speaker's Note:** Emphasize that "Generate" is best understood as a "Generative Search"—the AI searches a vast solution space for the best fit to our `Spec`.
+    *   **Speaker's Note:** Emphasize that "Generate" is best understood as a "Generative Search." The practitioner's art is to guide this search away from merely "popular" answers towards the **most suitable** one for the specific context of the `Spec`.
     *   **Target Audience:** All.
     *   **Visualization:** "Old Paradigm Loop" vs. "New Paradigm Loop" diagrams from `00-core.md`.
 
@@ -88,7 +88,7 @@
 
 *   **Slide 11: The Future is a Calibrated Partnership**
     *   **Title:** Your Future Role: The System Designer & AI Calibrator.
-    *   **Key Message:** IDGL is the framework for a partnership. This requires more than just good prompting; it requires **alignment and respect** for the AI as a sensitive system that needs to be calibrated. Our value is in designing systems and articulating the intent that guides our AI partners.
+    *   **Key Message:** IDGL is the framework for a partnership. This requires more than just good prompting; it requires **alignment and respect** for the AI as a sensitive system. A core calibration technique is to demand **epistemic humility**: instructing the AI to admit when it lacks knowledge, rather than fabricating an answer. Our value is in designing systems and articulating the intent that guides our AI partners.
     *   **Target Audience:** All.
 
 *   **Slide 12: The Ultimate Proof: A Self-Defining System**
@@ -102,6 +102,21 @@
     *   **Target Audience:** All.
     *   **Visualization:** Link to the `03-adgl-framework/` directory.
 
-*   **Slide 14: Thank You & Questions**
-    *   **Contact Info**
-    *   **Link to the documentation repository.**
+---
+
+### Slide 14: Our Proposal: The Vanguard Project
+
+**The Ask:** Let's not "train" abstractly. Let's build something real.
+
+- **What:** A small team of your best developers (2-3 people).
+- **How:** They tackle one high-impact project slice using the IDGL methodology, from `Spec` to `Result`.
+- **The Outcome:**
+    1. A valuable `Digital Product` is delivered.
+    2. A powerful, internal case study is created.
+    3. Your team generates a **"Time Dividend"**—the surplus expert time needed to mentor others and scale this transformation.
+
+**This is the first step. It's pragmatic, low-risk, and proves the value immediately.**
+
+---
+
+### Slide 15: Q&A
