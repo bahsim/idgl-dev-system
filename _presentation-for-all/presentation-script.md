@@ -43,7 +43,7 @@ And most importantly, Third: **The Practitioner, Not the Process**. This system 
 
 "And that brings us to the fundamental change. For decades, we've been stuck in this loop: we code, it fails a test, we debug, and we code again. All our effort is focused on fixing the *output*.
 
-The new paradigm shifts our focus to where it has the most leverage: the *intent*. We are no longer iterating on the code; we are iterating on the specification itself. We use our intelligence to refine the blueprint, and we let the machine handle the construction. This is the shift from a 'Code-First' to a 'Spec-First' world."
+The new paradigm shifts our focus to where it has the most leverage: the *intent*. We are no longer iterating on the code; we are iterating on the specification itself. We use our intelligence to refine the blueprint, and we let the machine handle the construction. This is a shift from a 'Code-First' to a 'Spec-First' world. We view the AI's 'generation' step as an advanced 'Generative Search,' and our role is to provide the perfect constraints to guide that search away from just *popular* answers to the *most suitable* one."
 
 ---
 ### Slide 5: The Spec: The Executable Contract
@@ -128,17 +128,17 @@ For **Developers**, it automates the tedious, boilerplate work, freeing you to f
 And for **QA**, you get clear, formal, and executable `Verification Criteria` directly from the `Spec`, ending the ambiguity of what 'done' really means."
 
 ---
-### Slide 11: Pattern Spotlight: Rapid Prototyping
+### Slide 11: The Future is a Calibrated Partnership
 
-**Visual:** A timeline comparison. The top timeline shows a long, week-long bar labeled "Traditional Discovery" with icons for meetings and documents, ending in a question mark. The bottom timeline shows a short, one-hour bar labeled "IDGL Prototyping" with an icon of three distinct choices, ending in a happy client icon.
+**Visual:** An icon of a human and an AI shaking hands, with a "calibration dial" between them.
 
 **(Script):**
 
-"And this client-centric mindset is a core benefit. Think about the classic problem of requirement uncertainty. The traditional approach is weeks of meetings, trying to resolve ambiguity through conversation, with a high risk of failure.
+"Ultimately, IDGL is the framework for a new kind of partnership. And like any effective partnership, it requires more than just good communication; it requires alignment and respect.
 
-The **Rapid Prototyping** pattern inverts this. We take the partial requirements, and in a single hour, we generate two or three *different, partially-working prototypes*.
+This means we must treat the AI as a sensitive system that needs to be calibrated. Our future role is not just 'prompt engineer,' but **System Designer and AI Calibrator**.
 
-We no longer ask the client to imagine a solution; we present them with a concrete choice. This transforms a week of frustrating meetings into a single, highly productive decision-making session. It saves time, eliminates risk, and makes the client a happy, empowered partner in the process."
+A core calibration technique is to demand **epistemic humility**. We must build our `Specs` to instruct the AI to admit when it lacks knowledge, rather than fabricating a confident-sounding answer. This is what true alignment looks like. Our value is in designing systems and articulating the intent that safely and effectively guides our powerful AI partners."
 
 ---
 
