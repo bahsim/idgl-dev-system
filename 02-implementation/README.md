@@ -1,59 +1,35 @@
-# IDGL Implementation Plan: WishListShare NestJS Backend
+# IDGL in Action: The Proof
 
-## 1. Overview
+This directory contains the proof.
 
-Welcome to the Intent-Driven Generative Lifecycle (IDGL) implementation plan for the **WishListShare** backend. This document serves as the central guide for understanding the structure, strategy, and execution of the automated code generation process.
+The core documentation defines the "why" and the "how" of the IDGL. The patterns provide the Architect's advanced plays. This directory provides the tangible, hands-on examples that prove the system works in the real world.
 
-The core principle of this plan is **specification-driven development**. The entire application is defined in a formal `Spec` located in the `../01-concept/` directory. This implementation plan consumes that `Spec` to orchestrate a phased, dependency-aware generation of the final NestJS application.
+---
 
-**Primary Goal:** To automate the creation of a production-ready backend, minimizing manual coding and maximizing consistency, by translating a formal `Spec` into application code via a series of automated, verifiable steps.
+## Your First Step: The Vanguard Project Tutorial
 
-## 2. Project Structure
+The best way to learn the IDGL is to run your first project. We have a complete, hands-on tutorial that is the definitive starting point for your journey. It is designed to be your **Vanguard Project**.
 
-The `02-implementation/` directory is organized to support a clear, phased execution model:
+You will start with a simple idea and use the core IDGL workflows to produce a fully-specified, AI-generated, and human-validated software component.
 
-- **`/01-phase-scaffolding/`**: Contains scripts and configurations for the initial setup. This phase prepares the development environment by creating the NestJS project structure, installing all dependencies, and setting up the database connection.
-- **`/02-phase-generation/`**: Contains the core logic for the automated code generation. This phase is broken down into a strict sequence of steps, each responsible for generating a specific architectural layer of the application.
-  - **`01-step-entities/`**: Generates TypeORM entities.
-  - **`02-step-dtos/`**: Generates Data Transfer Objects (DTOs) for API communication.
-  - **`03-step-services/`**: Generates business logic services.
-  - **`04-step-auth/`**: Generates authentication and authorization logic (guards, strategies).
-  - **`05-step-controllers/`**: Generates API controllers and endpoints.
-  - **`06-step-app-config/`**: Generates the main application module and final configuration.
-- **Root Documents**:
-  - `README.md`: This guide.
-  - `implementation-plan.md`: A detailed, step-by-step technical guide for the IDGL practitioner.
-  - `strategic-plan.md`: The high-level business and strategic rationale for the project.
-  - `architectural-design-rationale.md`: A deep dive into the "why" behind the dependency-driven generation strategy.
+**[Start the End-to-End Tutorial →](./02-end-to-end-tutorial/)**
 
-## 3. The Phased Execution Model
+---
 
-The implementation is divided into two primary phases to ensure a robust and predictable outcome.
+## Case Studies: The Architect's Plays in Action
 
-### Phase 1: Scaffolding
+These additional projects are concrete case studies that demonstrate how an Architect runs specific, advanced plays from the playbook to solve complex, real-world problems.
 
-This phase is about preparation. It does not generate any application logic. Its purpose is to create a stable, fully configured foundation for the next phase.
+### 1. The React Refactor Project
+*   **Focus:** A small, focused project that demonstrates how to refactor an existing component with AI assistance.
+*   **Plays Demonstrated:**
+    *   **[The Spec Compilation Play](../01-patterns/01-Pattern-Spec-Compilation.md):** Shows how to use an AI to compile a high-level `Brief` into a formal `Spec` with a "Tests by Default" requirement.
+    *   **[The Managed Refactoring Play](../01-patterns/05-Pattern-Managed-Refactoring.md):** Provides a clear example of a "Shallow Refactoring" task.
+*   **[Explore this Project →](./01-react-refactor-with-tests/)**
 
-**Key Activities:**
-- Initialize a new NestJS project.
-- Install all required `npm` packages (`@nestjs/core`, `typeorm`, `passport`, etc.).
-- Configure `ormconfig.json` and `.env` for database connectivity.
-- Create empty module directories as placeholders.
-
-### Phase 2: Generation
-
-This is the core of the IDGL process. It executes a six-step dependency chain to generate the application's code. Each step is a discrete, automated task that takes a configuration file and a prompt as input and produces TypeScript code as output.
-
-The order of generation is critical and enforced by the plan:
-**Entities -> DTOs -> Services -> Auth -> Controllers -> App Config**
-
-This sequence ensures that no component is generated before its dependencies are available, eliminating circular dependencies and ensuring a clean, verifiable build at each stage.
-
-## 4. How to Use This Plan
-
-1.  **Start with the `strategic-plan.md`** to understand the business goals.
-2.  **Review the `architectural-design-rationale.md`** to understand the technical strategy.
-3.  **Execute the `implementation-plan.md`** step-by-step to run the scaffolding and generation phases.
-4.  **Validate** the output of each step against the success criteria defined in the `implementation-plan.md`.
-
-By following this structured approach, an IDGL practitioner can reliably and efficiently guide an AI to generate the complete, `Spec`-compliant WishListShare backend.
+### 2. The NestJS Backend Sample
+*   **Focus:** A larger project that demonstrates how to generate a complete, multi-layered backend application from a series of interdependent `Spec`s.
+*   **Plays Demonstrated:**
+    *   **[The Decomposition Play](../01-patterns/03-Pattern-Decomposition.md):** Shows how to break down a large goal ("build a backend") into a sequence of smaller, verifiable tasks.
+    *   **[The Development Phase Play](../01-patterns/08-Pattern-Lifecycle-Phases.md):** Provides a real-world example of a multi-task development phase.
+*   **[Explore this Project →](./03-nestjs-sample/)**

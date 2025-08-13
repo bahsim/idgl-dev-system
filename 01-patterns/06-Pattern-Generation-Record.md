@@ -1,46 +1,40 @@
-# Generation Record
+# The Generation Record Play
 
-## Definition
+## 1. The Play
+An Architect's work must be transparent, auditable, and repeatable. The **Generation Record** is the play that ensures this. It is the official, verifiable "flight recorder" for a single, strategic approach to a generative task.
 
-A **Generation Record** represents a distinct, high-level strategy or approach to solving a **Generative Task**. It is the practical implementation of the core philosophical principle of **"Persist State to Overcome Context Limitations"** from the `00-idgl-philosophy.md` document. It serves as a container to be modified and refined until the strategy is either perfected or abandoned.
+This play is the practical implementation of the core principle: **persist everything**. It transforms an ephemeral AI conversation into a durable, auditable engineering artifact.
 
-The IDGL framework defines two feedback loops that determine how records are handled, which map directly to the processes defined in `03-the-artifact-lifecycle.md`:
+## 2. What a Record Contains
+Each record is a self-contained history of a single strategic approach:
 
-1.  **The `Modification Process`:** When a validation check reveals minor discrepancies, the practitioner enters a refinement loop. This involves making adjustments to the artifact for the *current strategy*. These modifications happen **within the existing `Generation Record`**, updating its state.
+1.  **The `Spec`:** The contract that defines the goal for this specific strategy.
+2.  **The Final `Artifact`:** The final, validated version of the artifact generated under this strategy.
+3.  **The Refinement History:** A detailed log of the modification cycles within this strategy, including the prompts used and the validation outcomes.
+4.  **The Final Verdict:** The concluding assessment of whether this strategic approach was a success or a failure.
 
-2.  **The `Generation Process`:** When an artifact is fundamentally misaligned with the goal, the practitioner abandons the current strategy and initiates a new Generation Process. This action **creates a new `Generation Record`** to house the new strategic approach.
+## 3. How Records Are Used
+The Architect uses records to manage two key scenarios:
 
-## Structure of a Record
+1.  **Refinement (Modifying a Record):** When a validation check reveals a minor issue, the Architect enters a refinement loop. All changes, prompts, and validation notes from this loop are appended to the **current `Generation Record`**.
 
-Each record contains the evolving state of a single strategic approach:
+2.  **New Strategy (Creating a New Record):** When an approach is fundamentally flawed, the Architect abandons it. They close out the current record with a "failed" verdict and create a **new, separate `Generation Record`** to house the new strategic approach.
 
-1.  **Guiding Strategy:** The core intent that defines this approach.
-2.  **Active Artifact:** The final version of the artifact for this strategy, identical to the last artifact in the Refinement History.
-3.  **Refinement History:** A detailed log of the internal refinement cycles. Each entry is a complete snapshot containing:
-    *   **Refinement Intent:** The specific prompt used to modify the artifact.
-    *   **Validation Note:** The outcome of the validation for that specific artifact version.
-4.  **Final Validation Summary:** The concluding assessment of this approach once the refinement loop is complete.
+This discipline ensures that every attempted strategy—both successful and failed—is documented, providing an invaluable history of the project's evolution.
 
-## Example Scenario: Separating Modification from Re-Prompting
-
-**Generative Task:** "Create a visually appealing and performant image gallery."
+## 4. Example in Action
+**Generative Task:** "Create a performant image gallery."
 
 *   **Generation Record 1 (Strategy: Lazy Loading)**
-    *   **Guiding Strategy:** "Build the gallery using a simple lazy-loading approach."
+    *   **Spec:** "Build the gallery using a simple lazy-loading approach."
     *   **Refinement History (within Record 1):**
-        *   **Cycle 1:**
-            *   **Refinement Intent:** "Add a fade-in animation as images load."
-            *   **Validation Note:** "Animation works."
-        *   **Cycle 2:**
-            *   **Refinement Intent:** "Make the placeholder a blurred version of the original image."
-            *   **Validation Note:** "Blur effect added and validated."
-    *   **Active Artifact:** The final, complete code for the lazy-loading gallery, including all refinements.
-    *   **Final Validation Summary:** "This approach is too simple and cannot handle thousands of images efficiently. A new strategy is needed."
+        *   Cycle 1: "Add a fade-in animation." (Success)
+        *   Cycle 2: "Make the placeholder a blurred version of the original image." (Success)
+    *   **Final Verdict:** "Failed. This approach is too simple and cannot handle thousands of images efficiently. A new strategy is needed."
 
-*   **Generation Record 2 (Strategy: Virtualization - New Record Created via Re-prompting)**
-    *   **Guiding Strategy:** (Formed after abandoning Record 1) "Build a new gallery from scratch using a high-performance virtualization library."
-    *   **Internal Refinement Loop (Modifying Record 2):**
-        1.  Initial artifact is created.
-        2.  A validation check finds a scrollbar bug. A refinement is made.
-    *   **Active Artifact:** The code for the virtualization-based gallery with the bug fix.
-    *   **Final Validation Summary:** "Success. This strategy is performant and correct." 
+*   **Generation Record 2 (Strategy: Virtualization)**
+    *   **Spec:** "Build a new gallery from scratch using a high-performance virtualization library."
+    *   **Refinement History (within Record 2):**
+        *   Cycle 1: Initial artifact created.
+        *   Cycle 2: A scrollbar bug is found and fixed via refinement.
+    *   **Final Verdict:** "Success. This strategy is performant and correct." 

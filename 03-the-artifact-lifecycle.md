@@ -1,131 +1,75 @@
-# The Artifact Lifecycle: The IDGL Processes
+# The Artifact Lifecycle: The Architect's Workflow
 
-## 1. Introduction: The Lifecycle of an Artifact
+A `Spec` is a contract, but a contract is useless without a formal process for executing it. The Artifact Lifecycle defines the two disciplined workflows an Architect uses to translate a `Spec` into a tangible, validated result.
 
-This document defines the core processes of the Intent-Driven Generative Lifecycle (IDGL). While the **[Generative Task](#2-anatomy-of-a-generative-task)** is the fundamental unit of execution, its behavior is governed by one of three distinct processes that define the lifecycle of an **Artifact**, from its initial creation to its ongoing maintenance.
+Every action an Architect takes on an artifact falls into one of these two processes: **Generation** or **Modification**. Understanding them is key to maintaining control and predictability throughout a project.
 
-The core philosophy is to achieve a perfect **Generation**, where a well-formed `Spec` is transformed directly into a correct `Artifact`. The **Modification** and **Sustaining** processes provide the robust, formal mechanisms for the practical reality of iterative development and long-term maintenance.
+---
 
-## 2. Anatomy of a Generative Task
+## 1. The Generation Workflow: Forging the Initial Artifact
 
-A Generative Task is the fundamental unit of execution in IDGL. Its scope is defined not by the theoretical capability of the AI, but by the practical limits of human validation. It has two universal properties:
+This workflow is used exactly once per artifact: the moment of its creation. It is the ideal "happy path," where a high-quality `Spec` is used to forge a new artifact from a blank slate.
 
-*   **Intent-Driven:** Its execution is governed entirely by a formal **[Spec](./02-anatomy-of-a-spec.md)**.
-*   **Verifiable Scope:** Its scope must be constrained to what can be rigorously validated by a human expert.
+A rejection at this stage is significant. It doesn't suggest a minor bug; it signals a fundamental flaw in the `Spec` itself, requiring the Architect to return to the contract and refine their intent.
 
-## 3. The Generation Process
-
-This process is executed exactly once per Digital Product. It represents the ideal "happy path" for the initial creation of an Artifact from a blank slate. A rejection at this stage is more likely to indicate a fundamental misalignment with the `Spec`.
-
-#### Process Flow
+### Process Flow
 ```mermaid
 graph TD
-    subgraph "Generation Process"
-        A["Intent Formation"]
-        B["AI Generation"]
-        C["Validation (Judgment)"]
-        F(Artifact)
+    subgraph "Generation:_The_Initial_Forging"
+        A["Architect Authors the Spec"]
+        B["AI Forges the Artifact"]
+        C["Architect Validates Against the Spec"]
+        F(New Artifact)
 
-        A --> B
-        B --> C
-        C -- "Rejected (Fundamental misalignment)" --> A
+        A -- "Executes" --> B
+        B -- "Produces" --> C
+        C -- "Rejected<br/>(Fundamental Misalignment)" --> A
+
+        subgraph legend [Legend]
+            style legend stroke:#ccc,stroke-dasharray: 5 5
+            L1(Process Step)
+            L2(Validated Artifact)
+            style L1 stroke:#333
+            style L2 fill:#f2f2f2,stroke:#333,stroke-width:2px,color:#000
+        end
 
         B -.-> F
         C -.-> F
-
-        style F fill:#f2f2f2,stroke:#333,stroke-width:1px,color:#000
+        style F fill:#f2f2f2,stroke:#333,stroke-width:2px,color:#000
     end
 ```
 
-#### Data Flow Implementation: The Genesis Flow
-The `AI Generation` stage in this process is implemented by the **Genesis Data Flow**, which creates a new Digital Product from a single input: the `Spec`.
+---
 
+## 2. The Modification Workflow: Controlled, Iterative Change
+
+This is the Architect's primary workflow for all planned, iterative changes to an **existing artifact**. It is the main loop of day-to-day development and long-term maintenance. The process is always initiated with an existing artifact and a new `Spec` that defines the desired changes.
+
+Unlike in Generation, a rejection here is expected and managed. It typically indicates a minor implementation issue that the Architect can correct via a rapid **Refinement** loop, adjusting the `Spec` to provide clearer instructions for the next generation attempt.
+
+### Process Flow
 ```mermaid
 graph TD
-    subgraph "Genesis Data Flow"
-        A["Intent (The Spec)"]
-        B(AI Engine)
-        C["New Digital Product"]
+    subgraph "Modification:_The_Refinement_Loop"
+        
+        
+        A["1 Architect Authors<br/>Modification Spec"]
+        EA("Existing<br/>Artifact")
+        B["2 AI Generates ChangeSet"]
+        C["3 New Artifact Version is Validated"]
 
-        A --> B
-        B --> C
+        D(Updated Artifact)
+
+        A -- "Guides" --> B
+        B -- "Is Applied to Produce" --> D
+        D -- "Is Reviewed In" --> C
+        C -- "Rejected" --> A
+
+        EA -- "Provides Context For" --> A
+        EA -- "Is an Input To" --> B
+
+
+        style EA fill:#f2f2f2,stroke:#333,stroke-width:2px,color:#000
+        style D fill:#f2f2f2,stroke:#333,stroke-width:2px,color:#000
     end
 ```
-
-## 4. The Modification Process
-
-This process is used for all planned, iterative changes to an existing Artifact. A rejection is more likely to be a minor implementation issue that can be fixed via a fast **Refinement** loop.
-
-#### Process Flow
-```mermaid
-graph TD
-    subgraph "Modification Process"
-        A["Intent Formation"]
-        B["AI Generation"]
-        C["Validation (Judgment)"]
-        D["Refinement"]
-        F(Artifact)
-
-        A --> B
-        B --> C
-        C -- "Rejected (Minor changes)" --> D
-        D --> B
-
-        B -.-> F
-        C -.-> F
-        D -.-> F
-
-        style F fill:#f2f2f2,stroke:#333,stroke-width:1px,color:#000
-    end
-```
-
-#### Data Flow Implementation: The Modification Flow
-The `AI Generation` stage in this process is implemented by the **Modification Data Flow**, which uses a curated **Context** to produce a **ChangeSet**.
-
-```mermaid
-graph TD
-    subgraph "Modification Data Flow"
-        A["Initial State"]
-        B["Context"]
-        C["Intent (The Spec)"]
-        D(AI Engine)
-        E["Generated ChangeSet"]
-        F["New State"]
-
-        A -- "is curated into" --> B
-        B & C --> D
-        D --> E
-        A & E -- "are applied to produce the" --> F
-    end
-```
-*   **Context:** A curated subset of the `Initial State` provided to the AI.
-*   **Generated ChangeSet:** The output from the AI, containing a set of `add`, `modify`, or `delete` operations.
-*   **Apply:** The action of applying the `ChangeSet` to the `Initial State` to produce the `New State`.
-
-## 5. The Sustaining Process
-
-This process models the ongoing maintenance or evolution of an Artifact, where changes are driven by a continuous cycle of generation and validation.
-
-#### Process Flow
-```mermaid
-graph TD
-    subgraph "Sustaining Process"
-        D["Sustaining"]
-        C["Validation (Judgment)"]
-        B["AI Generation"]
-        F(Artifact)
-
-        B --> C
-        C -- "Rejected" --> D
-        D --> B
-
-        B -.-> F
-        C -.-> F
-        D -.-> F
-
-        style F fill:#f2f2f2,stroke:#333,stroke-width:1px,color:#000
-    end
-```
-
-#### Data Flow Implementation
-The `AI Generation` stage in this process is also implemented by the **Modification Data Flow**.
