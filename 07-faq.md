@@ -47,6 +47,4 @@ The IDGL framework is designed to automate or absorb many of the traditional fun
 
 3.  **Risk is Managed by the Core Loop:** The primary risk—building the wrong product—is mitigated by the tight `Spec -> Generate -> Validate` feedback loop and the **[Rapid Prototyping Pattern](./01-patterns/10-Pattern-Rapid-Prototyping.md)**.
 
-4.  **The Future is Automated Orchestration:** In the more advanced **[ADGL Framework](./03-adgl-framework/)**, the function of project orchestration is explicitly assigned to a "Planner Agent." This AI agent manages the entire workflow, from task decomposition to final validation, making it the de facto project manager.
-
-While a human may still be needed for high-level budget and resource management, the day-to-day work of tracking tasks and managing scope is a native, automated feature of the IDGL/ADGL process.
+While a human may still be needed for high-level budget and resource management, the day-to-day work of tracking tasks and managing scope is a native, automated feature of the IDGL process.

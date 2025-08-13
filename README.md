@@ -135,8 +135,6 @@ graph TD
 
 While the formality of the IDGL process provides structure, it is not intended to create manual "paperwork." This routine is explicitly designed to be alleviated by a suite of automation tools — from simple scripts to a dedicated development server—that handle the boilerplate, manage the data flows, and enforce the architectural consistency defined in the Patterns.
 
-The IDGL, as a pure methodology, is a good and necessary start. However, the logical continuation of its evolution is the **Agentic-Driven Generative Lifecycle (ADGL)**: an opinionated, automated framework that brings the IDGL's principles to life. For a concrete guide on implementing this next stage, see the **[ADGL Framework](./03-ad-framework/)**.
-
 ## Core Roles
 
 - IDGL Practitioner: See [The IDGL Practitioner Profile](./06-idgl-practitioner-profile.md).
@@ -147,6 +145,6 @@ The world of AI is changing at an incredible speed. The temptation to fall behin
 
 The IDGL is the bus to that train.
 
-It is a lightweight, pragmatic system designed to go *with* the AI flow, not against it. The effort spent to comprehend and internalize this methodology has an immediate ROI, boosting productivity enough to create the very time needed to master it. It is the right instrument for this moment of transition, providing the structure needed to make the AI transformation real and concrete today, while being designed to naturally evolve into the fully-fledged, automated ADGL framework of tomorrow.
+It is a lightweight, pragmatic system designed to go *with* the AI flow, not against it. The effort spent to comprehend and internalize this methodology has an immediate ROI, boosting productivity enough to create the very time needed to master it. It is the right instrument for this moment of transition, providing the structure needed to make the AI transformation real and concrete today.
 
 As sharing brings greater rewards than hoarding, this system is open for all. Welcome aboard.
