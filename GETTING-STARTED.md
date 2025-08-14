@@ -25,10 +25,12 @@ Your first step is **not** to persuade your teammates. It is to use the IDGL pri
 
 ---
 
-### The Next Level: Commanding the AI with Protocols
+### Level Up: From Architect to AI Commander
 
-Once you have chosen your path and are ready to move beyond the basics, the next step is to master the **AI Agent Protocol Library**. This is how you unlock the full power of the IDGL.
+Once you have chosen your path and are ready to move beyond the basics, the next step is to master the **AI Operational Tooling**. This is how you unlock the full power of the IDGL.
 
-These protocols are configuration files that turn a general-purpose AI into a specialized professional for a specific task. Learning to use them is the final step in moving from being a student of the IDGL to a practicing Architect.
+The core of this tooling is the `idgl-boot-config.yaml`, a single configuration file that bundles the entire IDGL framework and transforms a general-purpose AI into a specialized, expert partner for your workflow.
 
-**[→ Learn How to Use the AI Agent Protocols](./10-agent-protocols/README.md)**
+Learning to generate and use this file is the final step in moving from being a student of the IDGL to a practicing Architect who can command their AI with precision.
+
+**[→ Learn How to Generate and Use the AI Boot Configuration](../04-ai-operational/README.md)**

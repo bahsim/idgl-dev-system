@@ -1,0 +1,23 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && node build/buildBootConfig.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^24.2.1",
+    "glob": "^11.0.3",
+    "js-yaml": "^4.1.0",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@types/glob": "^9.0.0",
+    "@types/js-yaml": "^4.0.9"
+  }
+}
