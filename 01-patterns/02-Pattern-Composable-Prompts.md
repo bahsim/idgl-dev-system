@@ -21,3 +21,12 @@ This play requires two key components:
 
 ## 4. Example in Action
 This play is implemented in the `idgl-dev-system/02-implementation/scripts/` directory. The `idgl-template-engine.ps1` script serves as the pre-processor for the `@import` directive. The `prompt-templates/` directory contains the main `spec-compiler.md` template and its imported `_partials/preamble-spec-definition.md`.
+
+---
+
+## From Theory to Practice: The AI Agent Protocol Library
+This pattern is not just a theoretical concept. It is the core principle behind the **AI Agent Protocol Library**, which is the "software" that powers our AI partners.
+
+This library contains a set of pre-built, professional-grade "main templates" that you can use to configure a general-purpose AI into a specialized agent for a specific task.
+
+**[→ Learn how to use the AI Agent Protocols here.](../../10-agent-protocols/README.md)**

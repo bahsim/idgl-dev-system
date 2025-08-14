@@ -29,6 +29,7 @@ Their true value is in serving as the `Spec` for the smart tooling that enables 
 *(For building complex `Specs` from smaller, reusable parts)*
 
 *   **[Composable Prompts](./01-patterns/02-Pattern-Composable-Prompts.md):** A technical pattern for managing meta-prompts. It uses a pre-processor to resolve `@import` directives, allowing prompts to be composed from reusable partials.
+*   **[Spec Library](./01-patterns/13-Pattern-Spec-Library.md):** The enterprise-level play for establishing a "Don't Repeat Yourself" (DRY) principle for `Specs`. It involves creating a canonical, version-controlled library of `Specs` for an organization's core components.
 
 ### III. Organizational Plays
 *(For structuring the work, the artifacts, and the team)*

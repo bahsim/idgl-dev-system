@@ -1,6 +1,6 @@
 # The Anatomy of a Spec: The Architect's Executable Contract
 
-The Architect does not code; they author a `Spec`. This is the single most important artifact in the IDGL, as it is the primary instrument of control over the AI. It is not "documentation" in the traditional sense; it is an **executable contract** that serves as the blueprint for generation.
+The Architect does not code; they author a `Spec`. This is the single most important artifact in the IDGL, as it is the primary instrument of control over the AI. It is not "documentation" in the traditional sense; it is an **executable contract** that serves as the blueprint for generation. More than that, it is a **discipline for forcing clarity of thought**—a skill that is essential for both human and AI communication.
 
 The quality of the `Spec` is the single greatest predictor of the quality of the final result. A vague contract will produce a chaotic result. A precise contract will produce a predictable one.
 

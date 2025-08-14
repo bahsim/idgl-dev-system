@@ -1,33 +1,31 @@
-# End-to-End Tutorial: An Introduction
+# Your First Mission: The Vanguard Project
 
-## Goal
+## 1. The Goal
+This tutorial is your first hands-on project as an **Architect**. Its purpose is to guide you through a complete, end-to-end generative workflow.
 
-This tutorial demonstrates the Intent-Driven Generative Lifecycle (IDGL) in action. Its purpose is to make the core IDGL concepts practical and easy to understand.
+You will take a high-level idea and transform it into a fully-specified, AI-generated, and human-validated software component.
 
-We will walk through a single, complete **Generative Task**: creating a tested software component from a high-level idea.
+## 2. The Architect's Workflow
+This is not a traditional coding tutorial. You will not be writing code. Instead, you will be executing the **Architect's Workflow**:
 
-## What You Will See
+1.  **Defining Intent:** You will start with a simple, high-level goal.
+2.  **Authoring a Contract:** You will transform that goal into a precise, verifiable `Spec` that will serve as the AI's contract.
+3.  **Supervising Execution:** You will use that `Spec` to command an AI to generate the complete, tested code.
+4.  **Enforcing the Verdict:** You will rigorously validate the AI-generated code against the criteria in your `Spec` to ensure the contract was fulfilled.
 
-This is not a traditional coding tutorial. You will not see a step-by-step guide on how to *write* code. Instead, you will see a demonstration of the core IDGL workflow:
-
-1.  **Defining Intent:** We will start with a simple, high-level goal.
-2.  **Creating a Specification:** We will transform that goal into a precise, verifiable `Spec` that an AI can understand.
-3.  **Generating an Artifact:** We will use that `Spec` to guide an AI in generating the complete, tested code.
-4.  **Validating the Result:** We will formally validate the AI-generated code against the criteria in our `Spec`.
-
-## The Core Loop
-
-This entire process is designed to show the new development loop in practice:
+## 3. The Architect's Loop
+This entire process is designed to show the Architect's core feedback loop in action:
 
 ```mermaid
 graph TD
-    subgraph New Paradigm Loop
-        A(Intent) -- "Generate" --> B(Result);
-        B -- "Evaluate" --> C{Does it meet Intent?};
-        C -- No --> D(Refine Intent);
-        D --> A;
-        C -- Yes --> E(Done);
+    subgraph "The Architect's Loop: Commanding Outcomes"
+        direction LR
+        D(Perfect the Spec) -- "Generate" --> E(AI-Generated Result);
+        E -- "Evaluate" --> F{Does it meet the Spec?};
+        F -- No --> G(Refine the Spec);
+        G --> D;
+        F -- Yes --> H(Done.);
     end
 ```
 
-By the end of this tutorial, you will have a clear, practical understanding of how an IDGL Practitioner works and why this new paradigm is a more effective way to create software.
+By the end of this tutorial, you will have a clear, practical understanding of how an Architect works and why this new paradigm is a more powerful way to create software.

@@ -11,36 +11,26 @@ This repository contains the **Intent-Driven Generative Lifecycle (IDGL)**: the 
 ---
 
 ## The Path to Becoming an Architect
+This documentation is your guide to mastering the Architect's Way. It is structured to build your understanding from the foundational philosophy to practical application.
 
-IDGL is a mindset, and this documentation is your guide. The path is structured to build your understanding from the foundational philosophy to practical mastery.
-
-### Step 1: Understand the New World (The "Why")
-Before learning the techniques, you must understand the new paradigm. These documents explain the core conflict and the mindset of the Architect.
-
-*   **[The Core Paradigm](./00-core.md):** Defines the fundamental shift from a "Code-First" to a "Spec-First" world.
-*   **[The IDGL Philosophy](./00-idgl-philosophy.md):** Outlines the principles and mindset required to partner effectively with AI.
-
-### Step 2: Learn the Architect's Toolkit (The "How")
-This is the practical methodology—the core tools the Architect uses to command the AI and control the outcome.
-
-*   **[The Anatomy of a Spec](./02-anatomy-of-a-spec.md):** The standard for authoring the `Spec`—the Architect's "executable contract."
-*   **[The Artifact Lifecycle](./03-the-artifact-lifecycle.md):** The formal processes for generating and sustaining software.
-*   **[The Communication Principles](./04-communication-principles.md):** The foundational skills for guiding any generative agent.
-
-### Step 3: Master the Architect's Plays (The "Advanced Strategy")
-Once you've learned the core tools, you can master the advanced plays that are out of reach for the Gambler.
-
-*   **[IDGL Patterns](./05-patterns.md):** The catalog of powerful, reusable strategies for taming legacy code, manufacturing certainty, and more.
+*   **The Core Doctrine:** The foundational principles and mindset of the Architect.
+    *   **[The Core Paradigm](./00-core.md)**
+    *   **[The Architect's Mindset](./00-idgl-philosophy.md)**
+    *   **[The Architect: A Profile](./06-the-architect-profile.md)**
+    *   **[FAQ](./07-faq.md)**
+*   **The Architect's Workflow:** The practical methodology for commanding the AI.
+    *   **[The Anatomy of a Spec](./02-anatomy-of-a-spec.md)**
+    *   **[The Artifact Lifecycle](./03-the-artifact-lifecycle.md)**
+*   **The Architect's Playbook:** The catalog of repeatable strategies for advanced results.
+    *   **[Communication Principles](./04-communication-principles.md)**
+    *   **[Advanced Plays (Patterns)](./05-patterns.md)**
 
 ---
 
-## Your First Step: The Vanguard Project
+## Getting Started: From Theory to Practice
+Reading is not enough. The path to becoming an Architect is through building. We have a clear, pragmatic guide for your first step, whether you are an individual developer or a team lead.
 
-The path to becoming an Architect is not just about reading; it's about building. The best way to begin is with a pragmatic, low-risk first step called the **Vanguard Project**.
-
-We have a complete, hands-on tutorial that walks you through this entire process, from a simple idea to a fully validated software component. This is the definitive starting point for your journey.
-
-**[Start the End-to-End Tutorial →](./02-implementation/02-end-to-end-tutorial/00-tutorial-overview.md)**
+**[Click here to begin your journey →](./GETTING-STARTED.md)**
 
 ---
 
@@ -49,6 +39,8 @@ We have a complete, hands-on tutorial that walks you through this entire process
 The ultimate proof of the Architect's discipline? **When it is robust enough to forge itself.**
 
 This entire IDGL framework is the product of its own process. A system that can bootstrap its own creation is not a theory; it's a **proven reality.**
+
+**[You can explore the `Specs` that define this system here →](./meta-specs/)**
 
 ```mermaid
 graph TD

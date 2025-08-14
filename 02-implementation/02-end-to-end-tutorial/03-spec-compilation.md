@@ -1,13 +1,11 @@
-# Spec: `useDataFetching` Hook
+# The Architect's Contract: `useDataFetching` Hook
 
-This document is the formal, compiled `Spec` for the `useDataFetching` hook. It is derived from the initial `Brief` and enriched with detailed requirements to ensure a robust and predictable generative outcome.
+This document is the formal, AI-compiled `Spec` for the `useDataFetching` hook. It is the **executable contract** that the Architect will use to command the AI. It was derived from the Architect's initial `Brief` and has been enriched with the detailed verification criteria required to ensure a robust and predictable outcome.
 
 ## 1. Objective
-
 Create a reusable, type-safe, and well-tested React hook named `useDataFetching` that standardizes API data fetching within the application.
 
 ## 2. Rationale
-
 **Business Rationale:** To improve developer productivity, reduce bugs, and ensure a consistent user experience by standardizing the logic for handling data fetching, loading states, and errors.
 
 **Technical Constraints:**
@@ -17,7 +15,8 @@ Create a reusable, type-safe, and well-tested React hook named `useDataFetching`
 - Must not have any external runtime dependencies (e.g., `axios`, `swr`).
 - The code style must follow modern React patterns (e.g., functional components, hooks).
 
-## 3. Verification Criteria
+## 3. Verification Criteria (The "Proof")
+This is the proof the AI must provide to demonstrate that the contract has been fulfilled.
 
 ### 3.1. Functional Requirements
 

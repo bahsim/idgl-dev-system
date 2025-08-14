@@ -1,4 +1,7 @@
-# Brief: Create `useDataFetching` Hook
+# The Architect's Directive
+This is the first artifact the Architect creates. It is not a formal, detailed `Spec`, but a simple, high-level **`Brief`**. Its purpose is to capture the core intent in natural language, providing a clear directive for the "Spec Compiler" AI agent that we will use in the next step.
+
+---
 
 **Objective:** Create a reusable React hook for fetching data from an API.
 
@@ -29,5 +32,3 @@ function MyComponent() {
   );
 }
 ```
-
-This is the initial intent. The next step in the IDGL process is to "compile" this brief into a formal, detailed `Spec`.
