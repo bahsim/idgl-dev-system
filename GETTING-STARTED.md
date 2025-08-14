@@ -33,4 +33,4 @@ The core of this tooling is the `idgl-boot-config.yaml`, a single configuration 
 
 Learning to generate and use this file is the final step in moving from being a student of the IDGL to a practicing Architect who can command their AI with precision.
 
-**[→ Learn How to Generate and Use the AI Boot Configuration](../04-ai-operational/README.md)**
+**[→ Learn How to Use and Maintain the AI Boot Configuration](./04-ai-agent-boot-config/README.md)**
