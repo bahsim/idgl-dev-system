@@ -1,0 +1,170 @@
+idgl_system:
+  name: "Intent-Driven Generative Lifecycle (IDGL)"
+  version: "1.0"
+  description: "A discipline for commanding generative AI by focusing on perfecting intent over writing code."
+  core_paradigm:
+    shift: "From Coder (competing with AI on 'how') to Architect (commanding AI with 'why')."
+    old_loop:
+      name: "The Drudgery of Debugging"
+      steps: ["Write Code", "Test", "Debug & Fix"]
+      focus: "Reactive, low-leverage debugging."
+    new_loop:
+      name: "The Leverage of Refining Intent"
+      steps: ["Perfect the Spec", "AI Generates Result", "Evaluate against Spec", "Refine the Spec"]
+      focus: "Proactive, high-leverage strategic refinement."
+  philosophy:
+    creed:
+      - principle: "The Practitioner, Not the Process"
+        description: "The system serves the Architect; the Architect does not serve the system. Augment human intellect, don't just automate."
+      - principle: "Embrace Alternatives"
+        description: "The goal is to cheaply explore multiple AI-generated solutions, not find a single perfect one."
+      - principle: "YAGNI (You Ain't Gonna Need It)"
+        description: "IDGL is a toolkit, not a bureaucracy. Use the simplest path. Apply formal patterns only when complexity demands them."
+    tenets:
+      - name: "The Spec is the Contract"
+        description: "All work begins and ends with a formal, version-controlled Spec. It is an executable contract and the single source of truth."
+      - name: "The AI is a Force Multiplier, Not a Colleague"
+        description: "The AI is an engine for execution, not judgment. Validation is the exclusive responsibility of the Architect."
+      - name: "Execution is a Choice, Not a Mandate"
+        description: "The Architect can choose to execute the Spec manually to retain deep knowledge, using the AI as a world-class planning partner."
+      - name: "The Lifecycle is an Audit Trail"
+        description: "Every artifact is the result of a structured, repeatable, and transparent lifecycle, creating an auditable chain from intent to implementation."
+  spec:
+    definition: "The primary instrument of control. An executable contract, not just documentation. A discipline for forcing clarity of thought."
+    pillars:
+      - name: "Objective"
+        purpose: "Defines the 'What'. A clear, explicit, concise statement of the primary goal."
+        example: "Create a reusable React hook named `useDebounce`."
+      - name: "Rationale"
+        purpose: "Explains the 'Why'. Provides context, constraints, and establishes the AI's persona."
+        components:
+          - "Business Rationale: The user value justifying the task."
+          - "Technical Constraints: Required libraries, frameworks, coding standards."
+        example: "Used in a search bar to prevent excessive API calls. Must be TypeScript, no external libraries."
+      - name: "Verification Criteria"
+        purpose: "Specifies the 'Proof'. The most critical pillar. A clear, verifiable checklist defining a successful outcome."
+        principle: "More detail equals more control. Forces thinking through edge cases and error conditions upfront."
+        example: "Checklist for `useDebounce`: accepts generic value, returns value after delay, handles unmounting."
+    anti_patterns:
+      - name: "Vagueness"
+        example: "'Make a button.' - Lacks context, constraints, and criteria."
+      - name: "Compound Objectives"
+        example: "'Create a hook and refactor the profile page.' - Should be two separate contracts."
+      - name: "Implied Knowledge"
+        example: "'Implement standard debounce logic.' - Fails to specify the proof; logic must be explicitly defined."
+  artifact_lifecycle:
+    workflows:
+      - name: "Generation"
+        description: "Forging the initial artifact from a blank slate. Used once per artifact."
+        flow:
+          - "Architect Authors the Spec"
+          - "AI Forges the Artifact"
+          - "Architect Validates Against the Spec"
+        rejection_meaning: "A fundamental flaw in the Spec, requiring refinement of the core intent."
+      - name: "Modification"
+        description: "Controlled, iterative change to an existing artifact. The primary loop for day-to-day development."
+        flow:
+          - "Architect Authors Modification Spec (with context of existing artifact)"
+          - "AI Generates ChangeSet"
+          - "New Artifact Version is Validated"
+        rejection_meaning: "A minor implementation issue. Addressed by refining the Spec with clearer instructions."
+  communication_principles:
+    goal: "A set of specific, repeatable 'plays' for controlling the generative process in real-time dialogue."
+    principles:
+      - id: 1
+        name: "Formulate the Goal Explicitly"
+        purpose: "To direct the AI's attention to a specific result."
+      - id: 2
+        name: "Specify the Output Format"
+        purpose: "To simplify perception and verification of the result."
+      - id: 3
+        name: "Establish the AI's Role"
+        purpose: "To set the model to the desired expert context."
+      - id: 4
+        name: "Limit and Clarify Conditions"
+        purpose: "To significantly reduce vagueness and errors."
+      - id: 5
+        name: "Iterate"
+        purpose: "To achieve perfection through a feedback loop."
+      - id: 6
+        name: "Request Feedback"
+        purpose: "To check for understanding before generation."
+      - id: 7
+        name: "Use Universal Concepts"
+        purpose: "To simplify the AI's translation of abstract requirements."
+      - id: 8
+        name: "Develop Discipline of Thought"
+        purpose: "To make every instruction clear, strong, and unambiguous."
+    plays:
+      - name: "The Persona Mandate"
+        implements: "Establish the AI's Role"
+        description: "Assigns the AI a specific, expert persona to set the quality bar."
+        example: "'Proceed as a senior software developer.'"
+      - name: "The Socratic Refinement"
+        description: "Uses questions to force the AI to diagnose its own errors instead of fixing them directly."
+        example: "'Analyze the error and propose three potential causes.'"
+      - name: "The Trade-off Analysis"
+        description: "Leverages the AI to generate and argue for multiple solutions to inform a decision."
+        example: "'Introduce three potential solutions. For each, provide arguments for and against.'"
+      - name: "The Output Contract"
+        implements: "Specify the Output Format"
+        description: "Gives the AI precise, non-negotiable constraints on the structure of its response."
+        example: "'The output must be a valid JSON object with the keys 'id', 'name', and 'status'.'"
+      - name: "The Epistemic Humility Demand"
+        description: "Instructs the AI to admit when it does not have a high-confidence answer."
+        example: "'If you do not know the answer, state that you do not know. Do not fabricate an answer.'"
+  agent_protocols:
+    description: "Specific professional personas the AI can adopt for a task."
+    roles:
+      - name: "Decomposition Specialist"
+        goal: "Decompose a large 'Epic' `Spec` into a plan of smaller, manageable sub-`Specs`."
+        prompt: "Act as a Decomposition Specialist. This is a big feature. Help me break it down into smaller, manageable `Specs`."
+      - name: "Spec Compiler"
+        goal: "Compile a human-authored `Brief` into a formal, verifiable `Spec` by engaging in a clarifying dialogue."
+        prompt: "Act as a Spec Compiler. I need to build a user authentication endpoint. Let's create the `Spec` for it."
+      - name: "Code Generator"
+        goal: "Generate a code artifact based on an approved `Spec`."
+        prompt: "Act as a Code Generator. The `Spec` for the auth endpoint is approved. Please generate the code."
+      - name: "Code Analyst"
+        goal: "Analyze existing code to report on its structure, public API, or other characteristics."
+        prompt: "Act as a Code Analyst. Tell me about the public methods in this file: `src/utils/api.ts`."
+      - name: "Legacy Spec Generator"
+        goal: "Reverse-engineer a formal `Spec` from an existing, undocumented legacy file to enable safe refactoring."
+        prompt: "Act as a Legacy Spec Generator. Reverse-engineer a formal `Spec` for this file so I can refactor it safely."
+  patterns:
+    description: "Advanced, optional plays for taming complexity and scaling the IDGL process."
+    categories:
+      - name: "Workflow Plays"
+        description: "For applying the IDGL lifecycle to common engineering scenarios."
+        patterns:
+          - name: "Spec Compilation"
+            description: "A two-tiered system where a human-authored `Brief` is compiled into a formal `Spec` by an AI agent."
+          - name: "Decomposition"
+            description: "Breaking down a large `Intent` into a series of smaller, validated sub-tasks with an AI planning partner."
+          - name: "Legacy Onboarding"
+            description: "Bringing existing code under IDGL management by reverse-engineering a `Spec` from it."
+          - name: "Managed Refactoring"
+            description: "Performing large-scale refactoring against a formal `Spec` that defines the desired end-state."
+          - name: "Rapid Prototyping"
+            description: "Lightweight application of IDGL to generate multiple, partial solutions for accelerating client feedback."
+      - name: "Compositional Plays"
+        description: "For building complex `Specs` from smaller, reusable parts."
+        patterns:
+          - name: "Composable Prompts"
+            description: "A technical pattern for managing meta-prompts using `@import` directives for reusable partials."
+          - name: "Spec Library"
+            description: "An enterprise-level play for a canonical, version-controlled library of `Specs` for core components (DRY for Specs)."
+      - name: "Organizational Plays"
+        description: "For structuring the work, artifacts, and the team."
+        patterns:
+          - name: "Directory Structure"
+            description: "The recommended file system layout for organizing `Specs`, `Artifacts`, and related documentation."
+          - name: "Task Orchestration"
+            description: "A formal play for defining and managing dependencies between multiple generative tasks."
+          - name: "Strategic Adoption"
+            description: "A pragmatic, phased strategy for introducing and scaling the IDGL methodology within an organization."
+      - name: "Auditing & Governance Plays"
+        description: "For tracking and managing the outputs of the IDGL process."
+        patterns:
+          - name: "Generation Record"
+            description: "A formal play for creating an auditable record for each significant generative task."

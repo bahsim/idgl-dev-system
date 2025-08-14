@@ -13,7 +13,7 @@ This repository contains the **Intent-Driven Generative Lifecycle (IDGL)**, a li
 ### Get Started in 60 Seconds
 
 1.  **Download the AI Boot Configuration:**
-    *   **[Right-click and "Save Link As..." →](./04-ai-operational/dist/idgl-boot-config.yaml)**
+    *   **[Right-click and "Save Link As..." →](./04-ai-agent-boot-config/idgl-boot-config.yaml)**
 
 2.  **Initialize Your AI Agent:**
     *   Start a new chat session with your chosen AI.
