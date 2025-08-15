@@ -12,6 +12,12 @@ Crucially, these plays are not intended to be burdensome manual processes. They 
 
 Their true value is in serving as the `Spec` for the smart tooling that enables scale, governance, and predictability. They define the high-level behaviors that automation will handle, freeing the Architect to focus on strategy.
 
+### Why Are Patterns Included in the AI's Configuration?
+
+This is a critical distinction: **Protocols define the AI's behavior, while Patterns define the Architect's strategy.**
+
+The patterns are included in the AI's boot configuration not for the AI to *execute* them, but for **contextual awareness**. By making the AI aware of the strategic playbook the Architect is using, it transforms from a simple tool into a more effective partner. When the Architect signals they are using a specific pattern (e.g., "Let's start the Legacy Onboarding play"), the AI understands the larger context and can provide more intelligent and anticipatory support throughout the multi-step workflow.
+
 ---
 
 ## The Plays
