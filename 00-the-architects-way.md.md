@@ -40,7 +40,7 @@ The ultimate proof of the Architect's discipline? **When it is robust enough to 
 
 This entire IDGL framework is the product of its own process. A system that can bootstrap its own creation is not a theory; it's a **proven reality.**
 
-**[You can explore the `Specs` that define this system here →](./meta-specs/)**
+**[You can explore the `Specs` that define this system here →](./00-meta-specs/)**
 
 ```mermaid
 graph TD
