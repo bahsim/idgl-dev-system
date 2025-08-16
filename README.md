@@ -60,3 +60,6 @@ Use these prompts to put the AI into a specific professional persona for the tas
     > "Proceed like a 10x engineer. I expect clean, efficient, and well-documented code. Anticipate edge cases and include robust error handling."
 
 *... and many more in the **[→ Full Prompt Cookbook](./08-prompt-cookbook.md)**.*
+
+![The Architect vs. The Gambler](./_assets/chaos-vs-control.png)
+
