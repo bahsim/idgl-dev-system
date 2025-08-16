@@ -46,21 +46,17 @@ Use these prompts to put the AI into a specific professional persona for the tas
 | **Analyze existing code** | `"Act as a Code Analyst. Tell me about the public methods in this file: `src/utils/api.ts`."` |
 | **Onboard legacy code** | `"Act as a Legacy Spec Generator. Reverse-engineer a formal `Spec` for this file so I can refactor it safely."` |
 
-*For more advanced, multi-step scenarios, see the **[→ Prompt Cookbook](./08-prompt-cookbook.md)**.*
+*For more advanced, multi-step scenarios, see the **[→ Specs Cookbook](./08-specs-cookbook.md)**.*
 
-#### Using the Communication Playbook
-
-*   **To set the AI's persona for higher quality output:**
-    > "Act as a senior software developer specializing in secure API design."
+#### Key Plays from the Cookbook
 
 *   **To get a structured comparison of options:**
-    > "Introduce three potential solutions for our database schema. For each, provide a paragraph of arguments for and against. Then, select the most relevant one and justify your choice."
+    > "Before you answer, write two detailed paragraphs, one arguing for each of these solutions. Do not jump to conclusions. Then, tell me which one is better and why."
 
-*   **To get a specific output format:**
-    > "Show me the exact code changes as a diff. Do not describe the changes in prose."
+*   **To have the AI guide you on solving an error:**
+    > "If you were a senior software developer working on this project, what type of context would you need to solve this error? Tell me step-by-step instructions on how I can give you that context."
 
-*   **To force the AI to self-diagnose an error:**
-    > "That code has a bug. Analyze the error and propose three potential causes. Do not jump to conclusions."
+*   **To set a high quality bar for code generation:**
+    > "Proceed like a 10x engineer. I expect clean, efficient, and well-documented code. Anticipate edge cases and include robust error handling."
 
-*   **To prevent the AI from inventing answers:**
-    > "If you do not know the answer with high certainty based on your training data, state that you do not know. Do not fabricate an answer."
+*... and many more in the **[→ Full Prompt Cookbook](./08-prompt-cookbook.md)**.*
