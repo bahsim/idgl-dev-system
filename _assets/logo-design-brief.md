@@ -63,3 +63,4 @@
 ---
 
 **Note:** This brief is intended for professional designers and design agencies. The visual metaphors of "chaos to control" and "architect vs. gambler" should provide strong creative direction for the design while maintaining the professional, technical identity of IDGL.
+
