@@ -1,12 +1,14 @@
 # IDGL: From Chaos to Control
 
+<img src="./_assets/logo.png" alt="The Architect vs. The Gambler" width="512" height="512">
+
 Generative AI has introduced a new tension into our work: the incredible **speed** of AI versus the professional **discipline** required to build robust software. This chaos forces a choice upon every engineer:
+
+<img src="./_assets/chaos-vs-control.png" alt="The Architect vs. The Gambler" width="512" height="512">
 
 Are we **Gamblers**, who hope for a lucky prompt and spend our days cleaning up the mess?
 
 Or are we **Architects**, who command AI with a clear plan to guarantee the result?
-
-<img src="./_assets/chaos-vs-control.png" alt="The Architect vs. The Gambler" width="512" height="512">
 
 This repository contains the **Intent-Driven Generative Lifecycle (IDGL)**, a lightweight, tool-agnostic discipline for becoming an Architect in the AI era.
 
