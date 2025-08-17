@@ -1,0 +1,39 @@
+{
+  "name": "ast-parser",
+  "version": "1.0.0",
+  "description": "High-Quality AST Parser for React TypeScript Patterns using TypeScript Compiler API",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "dev": "ts-node src/cli.ts",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "parse": "ts-node src/cli.ts",
+    "analyze-all": "ts-node src/orchestrator.ts"
+  },
+  "keywords": [
+    "ast",
+    "parser",
+    "typescript",
+    "react",
+    "code-analysis",
+    "patterns",
+    "typescript-compiler-api"
+  ],
+  "author": "IDGL System",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

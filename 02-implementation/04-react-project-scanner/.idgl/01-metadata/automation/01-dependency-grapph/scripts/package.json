@@ -1,0 +1,19 @@
+{
+  "name": "idgl-dependency-graph-generator",
+  "version": "1.0.0",
+  "description": "Dependency Graph Generator for IDGL workspace",
+  "main": "dependency-graph.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dependency-graph.js",
+    "dev": "ts-node dependency-graph.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

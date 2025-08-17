@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "generatedAt": "2025-08-16T07:24:21.312Z",
+    "orchestratorVersion": "1.0.0",
+    "dependencyGraphPath": "../dependency-graph.json",
+    "summary": {
+      "totalProjects": 1,
+      "totalPatterns": 0,
+      "totalMainProjectPatterns": 0,
+      "totalSubmodulePatterns": 0,
+      "processingTime": 30
+    }
+  },
+  "projects": [
+    {
+      "projectId": "assessments-shared",
+      "projectPath": "react-assessments-shared/",
+      "mainProjectPatterns": [],
+      "submodulePatterns": [],
+      "errors": [
+        "Directory does not exist: C:\\dev\\pearson\\repos\\.idgl\\react-assessments-shared"
+      ],
+      "stats": {
+        "totalFiles": 0,
+        "processedFiles": 0,
+        "totalPatterns": 0,
+        "processingTime": 0,
+        "memoryUsage": 0
+      }
+    }
+  ]
+}
