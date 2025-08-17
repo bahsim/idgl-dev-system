@@ -6,6 +6,8 @@ Are we **Gamblers**, who hope for a lucky prompt and spend our days cleaning up 
 
 Or are we **Architects**, who command AI with a clear plan to guarantee the result?
 
+<img src="./_assets/chaos-vs-control.png" alt="The Architect vs. The Gambler" width="512" height="512">
+
 This repository contains the **Intent-Driven Generative Lifecycle (IDGL)**, a lightweight, tool-agnostic discipline for becoming an Architect in the AI era.
 
 ---
@@ -61,5 +63,16 @@ Use these prompts to put the AI into a specific professional persona for the tas
 
 *... and many more in the **[→ Full Prompt Cookbook](./08-prompt-cookbook.md)**.*
 
-![The Architect vs. The Gambler](./_assets/chaos-vs-control.png)
+---
+
+### Real-World Implementation: React Project Scanner
+
+See IDGL in action with our **[React Project Scanner](./02-implementation/04-react-project-scanner/)**, a complete implementation that demonstrates the full power of the framework:
+
+*   **🔍 AST Parser**: Analyzes React TypeScript patterns with semantic understanding
+*   **📊 Dependency Graph**: Maps project relationships and submodule structures  
+*   **🏗️ Built with IDGL**: Every component follows the `Spec` → Generate → Validate → Refine loop
+*   **✅ Production Ready**: Handles enterprise-scale projects with 10,000+ files
+
+This scanner shows how Architects use IDGL to build complex tools that would be impossible to create with traditional development approaches.
 
