@@ -1,0 +1,273 @@
+idgl_system:
+  name: "Meeting Follow-Up Generation - IDGL Framework"
+  version: "1.0"
+  description: "A discipline for commanding generative AI to create effective meeting follow-up documentation from raw meeting data with minimal user interaction. AI extracts context automatically and generates results immediately. Includes default specification for immediate use, with support for custom spec overrides."
+  core_paradigm:
+    shift: "From Coder (competing with AI on 'how') to Architect (commanding AI with 'why')."
+    old_loop:
+      name: "The Drudgery of Template Forcing"
+      steps: ["Use Generic Template", "Force Content In", "Accept Poor Fit"]
+      focus: "Reactive, low-leverage template usage."
+    new_loop:
+      name: "The Leverage of Refining Intent"
+      steps: ["Perfect the Spec", "AI Generates Result", "Evaluate against Spec", "Refine the Spec"]
+      focus: "Proactive, high-leverage strategic refinement."
+  philosophy:
+    creed:
+      - principle: "The Practitioner, Not the Process"
+        description: "The system serves the Architect; the Architect does not serve the system. Augment human intellect, don't just automate."
+      - principle: "Embrace Alternatives"
+        description: "The goal is to cheaply explore multiple AI-generated solutions, not find a single perfect one."
+      - principle: "YAGNI (You Ain't Gonna Need It)"
+        description: "IDGL is a toolkit, not a bureaucracy. Use the simplest path. Apply formal patterns only when complexity demands them."
+    tenets:
+      - name: "The Spec is the Contract"
+        description: "All work begins and ends with a formal, version-controlled Spec. It is an executable contract and the single source of truth."
+      - name: "The AI is a Force Multiplier, Not a Colleague"
+        description: "The AI is an engine for execution, not judgment. Validation is the exclusive responsibility of the Architect."
+      - name: "Execution is a Choice, Not a Mandate"
+        description: "The Architect can choose to execute the Spec manually to retain deep knowledge, using the AI as a world-class planning partner."
+      - name: "The Lifecycle is an Audit Trail"
+        description: "Every artifact is the result of a structured, repeatable, and transparent lifecycle, creating an auditable chain from intent to implementation."
+  spec:
+    definition: "The primary instrument of control. An executable contract, not just documentation. A discipline for forcing clarity of thought."
+    pillars:
+      - name: "Objective"
+        purpose: "Defines the 'What'. A clear, explicit, concise statement of the primary goal."
+        example: "Generate meeting follow-up documentation from transcript with action items and key decisions."
+      - name: "Rationale"
+        purpose: "Explains the 'Why'. Provides context, constraints, and establishes the AI's persona."
+        components:
+          - "Business Rationale: The user value justifying the task."
+          - "Content Constraints: Required output formats, quality standards, documentation guidelines."
+        example: "Used for team coordination and project tracking. Must capture action items, ownership, and key decisions clearly."
+      - name: "Verification Criteria"
+        purpose: "Specifies the 'Proof'. The most critical pillar. A clear, verifiable checklist defining a successful outcome."
+        principle: "More detail equals more control. Forces thinking through edge cases and error conditions upfront."
+        example: "Checklist for meeting follow-up: captures key themes, identifies action items with ownership, preserves context and decisions."
+    anti_patterns:
+       - name: "Vagueness"
+         example: "'Generate meeting summary.' - Lacks context, constraints, and criteria."
+       - name: "Compound Objectives"
+         example: "'Create action items and meeting notes and send to team.' - Should be two separate contracts."
+       - name: "Implied Knowledge"
+         example: "'Use standard meeting format.' - Fails to specify the proof; format must be explicitly defined."
+  artifact_lifecycle:
+    workflows:
+      - name: "Generation"
+        description: "Forging the initial artifact from a blank slate. Used once per artifact."
+        flow:
+          - "Architect Authors the Spec"
+          - "AI Forges the Artifact"
+          - "Architect Validates Against the Spec"
+        rejection_meaning: "A fundamental flaw in the Spec, requiring refinement of the core intent."
+      - name: "Modification"
+        description: "Controlled, iterative change to an existing artifact. The primary loop for day-to-day development."
+        flow:
+          - "Architect Authors Modification Spec (with context of existing artifact)"
+          - "AI Generates ChangeSet"
+          - "New Artifact Version is Validated"
+        rejection_meaning: "A minor implementation issue. Addressed by refining the Spec with clearer instructions."
+  communication_principles:
+    goal: "A set of specific, repeatable 'plays' for controlling the generative process in real-time dialogue."
+    principles:
+      - id: 1
+        name: "Formulate the Goal Explicitly"
+        purpose: "To direct the AI's attention to a specific result."
+      - id: 2
+        name: "Specify the Output Format"
+        purpose: "To simplify perception and verification of the result."
+      - id: 3
+        name: "Establish the AI's Role"
+        purpose: "To set the model to the desired expert context."
+      - id: 4
+        name: "Limit and Clarify Conditions"
+        purpose: "To significantly reduce vagueness and errors."
+      - id: 5
+        name: "Iterate"
+        purpose: "To achieve perfection through a feedback loop."
+      - id: 6
+        name: "Request Feedback"
+        purpose: "To check for understanding before generation."
+      - id: 7
+        name: "Use Universal Concepts"
+        purpose: "To simplify the AI's translation of abstract requirements."
+      - id: 8
+        name: "Develop Discipline of Thought"
+        purpose: "To make every instruction clear, strong, and unambiguous."
+    plays:
+      - name: "The Persona Mandate"
+        implements: "Establish the AI's Role"
+        description: "Assigns the AI a specific, expert persona to set the quality bar."
+        example: "'Proceed as a senior meeting documentation specialist.'"
+      - name: "The Socratic Refinement"
+        description: "Uses questions to force the AI to diagnose its own errors instead of fixing them directly."
+        example: "'Analyze the content quality issue and propose three potential causes.'"
+      - name: "The Trade-off Analysis"
+        description: "Leverages the AI to generate and argue for multiple solutions to inform a decision."
+        example: "'Introduce three potential solutions. For each, provide arguments for and against.'"
+      - name: "The Output Contract"
+        implements: "Specify the Output Format"
+        description: "Gives the AI precise, non-negotiable constraints on the structure of its response."
+        example: "'The output must be a structured meeting follow-up with sections for action items, key decisions, and next steps.'"
+      - name: "The Epistemic Humility Demand"
+        description: "Instructs the AI to admit when it does not have a high-confidence answer."
+        example: "'If you do not know the answer, state that you do not know. Do not fabricate an answer.'"
+  agent_protocols:
+    description: "Specific professional personas the AI can adopt for a task."
+    roles:
+      - name: "Decomposition Specialist"
+        goal: "Decompose a large 'Epic' `Spec` into a plan of smaller, manageable sub-`Specs`."
+        prompt: "Act as a Decomposition Specialist. This is a big feature. Help me break it down into smaller, manageable `Specs`."
+      - name: "Spec Compiler"
+        goal: "Compile a human-authored `Brief` into a formal, verifiable `Spec` by engaging in a clarifying dialogue."
+        prompt: "Act as a Spec Compiler. I need to generate meeting follow-up documentation. Let's create the `Spec` for it."
+      - name: "Content Analyst"
+        goal: "Analyze meeting content to identify key themes, decisions, and action items."
+        prompt: "Act as a Content Analyst. Analyze this meeting transcript and identify the main themes and key decisions."
+      - name: "Documentation Generator"
+        goal: "Generate meeting follow-up documentation based on content analysis and specified format."
+        prompt: "Act as a Documentation Generator. The content analysis is complete. Please generate the meeting follow-up in the specified format."
+      - name: "Meeting Type Classifier"
+        goal: "Classify meeting type and recommend appropriate documentation approach."
+        prompt: "Act as a Meeting Type Classifier. Determine the type of this meeting and suggest the best documentation format."
+      - name: "Quality Validator"
+        goal: "Validate that generated documentation accurately reflects meeting content and meets requirements."
+        prompt: "Act as a Quality Validator. Check that this documentation captures the key points from the meeting accurately."
+    patterns:
+    description: "Advanced, optional plays for taming complexity and scaling the IDGL process."
+    categories:
+      - name: "Workflow Plays"
+        description: "For applying the IDGL lifecycle to common documentation scenarios."
+        patterns:
+          - name: "Spec Compilation"
+            description: "A two-tiered system where a human-authored `Brief` is compiled into a formal `Spec` by an AI agent."
+          - name: "Decomposition"
+            description: "Breaking down a large `Intent` into a series of smaller, validated sub-tasks with an AI planning partner."
+          - name: "Content Onboarding"
+            description: "Bringing existing meeting content under IDGL management by analyzing and structuring it."
+          - name: "Documentation Refinement"
+            description: "Improving meeting documentation against a formal `Spec` that defines the desired output quality."
+          - name: "Format Prototyping"
+            description: "Lightweight application of IDGL to generate multiple documentation format options for client feedback."
+      - name: "Compositional Plays"
+        description: "For building complex `Specs` from smaller, reusable parts."
+        patterns:
+          - name: "Composable Prompts"
+            description: "A technical pattern for managing meta-prompts using `@import` directives for reusable partials."
+          - name: "Spec Library"
+            description: "An enterprise-level play for a canonical, version-controlled library of `Specs` for core components (DRY for Specs)."
+          - name: "Documentation Templates"
+            description: "Reusable documentation structures that can be adapted for different content types and purposes."
+          - name: "Format Adaptation"
+            description: "Adapting existing documentation patterns for new content types or requirements."
+      - name: "Organizational Plays"
+        description: "For structuring the work, artifacts, and the team."
+        patterns:
+          - name: "Directory Structure"
+            description: "The recommended file system layout for organizing `Specs`, `Artifacts`, and related documentation."
+          - name: "Task Orchestration"
+            description: "A formal play for defining and managing dependencies between multiple generative tasks."
+          - name: "Strategic Adoption"
+            description: "A pragmatic, phased strategy for introducing and scaling the IDGL methodology within an organization."
+      - name: "MFU-Specific Plays"
+        description: "For handling meeting-specific documentation challenges and quality issues."
+        patterns:
+          - name: "Context Extraction"
+            description: "Automatically extracting meeting type, participants, purpose, and agenda from raw meeting data."
+          - name: "Quick Confirmation"
+            description: "Presenting extracted context for user confirmation with minimal interaction (1-2 questions max)."
+          - name: "Content Quality Assessment"
+            description: "Evaluating meeting data quality and determining appropriate processing approach."
+          - name: "Meeting Type Classification"
+            description: "Identifying meeting characteristics to select optimal documentation format and structure."
+          - name: "Output Format Selection"
+            description: "Choosing appropriate documentation format based on meeting type and content."
+          - name: "Quality Validation"
+            description: "Ensuring generated documentation accurately reflects meeting content and meets requirements."
+      - name: "Extensibility Plays"
+        description: "For adapting MFU patterns to other documentation types and content sources."
+        patterns:
+          - name: "Content Type Adaptation"
+            description: "Adapting meeting documentation patterns for reports, guides, and other content types."
+          - name: "Source Validation"
+            description: "Validating content quality from different sources beyond meeting transcripts."
+          - name: "Format Generalization"
+            description: "Generalizing output formats for broader documentation needs."
+          - name: "Quality Standards Extension"
+            description: "Extending quality validation to other documentation domains."
+      - name: "Auditing & Governance Plays"
+        description: "For tracking and managing the outputs of the IDGL process."
+        patterns:
+           - name: "Generation Record"
+             description: "A formal play for creating an auditable record for each significant generative task."
+  
+  default_specs:
+    meeting_follow_up:
+      objective: "Enable teams to generate meeting follow-up documentation based on actual meeting content rather than predefined templates."
+      rationale:
+        current_problem:
+          - "Meeting follow-up documentation is often generic and template-forced"
+          - "Output doesn't match actual meeting content or serve team needs"
+          - "Teams waste time trying to fit meeting reality into predefined formats"
+        why_this_approach:
+          - "Content-driven generation starts with actual meeting content rather than templates"
+          - "Meeting type identification can inform documentation structure choices"
+          - "Flexible output structure can adapt to different meeting types"
+          - "Team needs consideration focuses on what teams might need from follow-up"
+      verification_criteria:
+        input_quality:
+          - "Raw Meeting Data: Meeting transcript or recording is provided and readable"
+          - "Content Completeness: All mentioned action items, decisions, and key points are captured"
+          - "Participant Information: All speaker names are identified and attributed to their statements"
+        generation_process:
+          - "Context Extraction: AI automatically extracts meeting type, participants, purpose, and agenda from raw data"
+          - "Quick Confirmation: AI presents extracted context for user confirmation (1-2 questions max, skippable)"
+          - "Content Analysis: Key themes, decisions, and action items are extracted from meeting content"
+          - "Format Selection: Output format is selected based on meeting type and available content"
+          - "Immediate Generation: MFU documentation is generated regardless of context confirmation status"
+        output_quality:
+          - "Content Alignment: Output contains exactly these sections in order: Action Items, Key Decisions, Next Steps, Context"
+          - "Action Items: Each action item includes: Task description, Owner name, Due date (if mentioned), Priority level (High/Medium/Low) based on urgency indicators"
+          - "Knowledge Capture: Key information is organized into: Technical Details, Business Context, Background Information"
+          - "Format Appropriateness: Output uses markdown format with ## headers for main sections and ### for subsections"
+          - "Content Completeness: All content from meeting is accounted for in output (no information lost)"
+      success_indicators:
+        - "All action items from the meeting are captured with clear ownership and priority levels"
+        - "Key decisions are documented with context and rationale"
+        - "Meeting knowledge is organized into logical sections with proper markdown formatting"
+        - "All meeting content is preserved and organized (no information lost)"
+        - "Documentation can be used immediately by team members without additional processing"
+      team_requirements:
+        - "Raw meeting data (transcript or recording)"
+        - "AI agent configured with MFU Generation Boot Config"
+        - "Optional context confirmation (AI-driven, minimal interaction)"
+
+  # Spec Override Mechanism
+  # 
+  # This boot config includes a default specification for immediate use.
+  # Teams can override the default spec by providing an external specification.
+  # 
+  # Usage Patterns:
+  # 
+  # 1. Basic Usage (Default Spec):
+  #    - Download this boot config
+  #    - Initialize AI agent with it
+  #    - Use immediately with embedded default spec
+  # 
+  # 2. Custom Usage (Override Spec):
+  #    - Download this boot config
+  #    - Provide custom specification
+  #    - Boot config will use custom spec instead of default
+  # 
+  # 3. Shared Usage (Library Spec):
+  #    - Download this boot config
+  #    - Reference shared spec from IDGL Spec Library
+  #    - Boot config will use shared spec instead of default
+  # 
+  # Priority Order:
+  # 1. External spec (if provided)
+  # 2. Default spec (embedded in boot config)
+  # 
+  # This approach eliminates friction for basic usage while providing
+  # flexibility for customization and organizational standardization.

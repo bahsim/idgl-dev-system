@@ -16,8 +16,9 @@ This repository contains the **Intent-Driven Generative Lifecycle (IDGL)**, a li
 
 ### Get Started in 60 Seconds
 
-1.  **Download the AI Boot Configuration:**
-    *   **[Right-click and "Save Link As..." →](./04-ai-agent-boot-config/idgl-boot-config.yaml)**
+1.  **Choose Your Boot Configuration:**
+    *   **[Generic IDGL Config →](./04-ai-agent-boot-config/GENERIC-USER-GUIDE.md)** (for general development, code generation, system design)
+    *   **[MFU Generation Config →](./04-ai-agent-boot-config/domain-specific-configs/MFU-USER-GUIDE.md)** (for meeting documentation, content analysis, knowledge transfer)
 
 2.  **Initialize Your AI Agent:**
     *   Start a new chat session with your chosen AI.
@@ -25,6 +26,10 @@ This repository contains the **Intent-Driven Generative Lifecycle (IDGL)**, a li
 
 3.  **Become the Architect.**
     *   The AI is now a configured IDGL partner. Start commanding it.
+
+**💡 Quick Decision Guide:**
+- **Use Generic Config** if you're doing general software development, system design, or learning IDGL
+- **Use MFU Config** if you're working with meeting documentation, content analysis, or knowledge transfer
 
 ---
 
@@ -49,6 +54,8 @@ Use these prompts to put the AI into a specific professional persona for the tas
 | **Generate code from a plan** | `"Act as a Code Generator. The `Spec` for the auth endpoint is approved. Please generate the code."` |
 | **Analyze existing code** | `"Act as a Code Analyst. Tell me about the public methods in this file: `src/utils/api.ts`."` |
 | **Onboard legacy code** | `"Act as a Legacy Spec Generator. Reverse-engineer a formal `Spec` for this file so I can refactor it safely."` |
+| **Analyze meeting content** | `"Act as a Content Analyst. Analyze this meeting transcript and identify the main themes and key decisions."` |
+| **Generate meeting follow-up** | `"Act as a Documentation Generator. The content analysis is complete. Please generate the meeting follow-up in the specified format."` |
 
 *For more advanced, multi-step scenarios, see the **[→ Specs Cookbook](./08-specs-cookbook.md)**.*
 
@@ -67,7 +74,23 @@ Use these prompts to put the AI into a specific professional persona for the tas
 
 ---
 
-### Real-World Implementation: React Project Scanner
+### Domain-Specific Boot Configurations
+
+IDGL supports domain-specific boot configurations that are tailored to specific use cases while maintaining the core methodology:
+
+*   **📋 [MFU Generation Config](./04-ai-agent-boot-config/domain-specific-configs/mfu-generation-boot-config.yaml)**: Specialized for meeting follow-up documentation generation (includes default spec)
+*   **🔧 [Domain-Specific Analysis](./04-ai-agent-boot-config/domain-specific-configs/domain-specific-boot-config-analysis.md)**: Detailed reasoning for domain-specific approach
+*   **📚 [Generic IDGL Config](./04-ai-agent-boot-config/idgl-boot-config.yaml)**: Universal configuration for general development
+
+Each domain-specific config maintains IDGL's core principles while adding specialized patterns, agent protocols, and workflows for the target domain. Domain-specific configs include default specifications for immediate use, with support for custom spec overrides.
+
+**🎯 Related Implementations:**
+- **[MFU Generation Implementation](./02-implementation/05-mfu-generation/)** - Complete implementation example with specs and definitions
+- **[Shared Spec Library](./05-spec-library/)** - Canonical specifications for organizational standardization
+
+### Real-World Implementations
+
+#### React Project Scanner
 
 See IDGL in action with our **[React Project Scanner](./02-implementation/04-react-project-scanner/)**, a complete implementation that demonstrates the full power of the framework:
 
@@ -76,5 +99,16 @@ See IDGL in action with our **[React Project Scanner](./02-implementation/04-rea
 *   **🏗️ Built with IDGL**: Every component follows the `Spec` → Generate → Validate → Refine loop
 *   **✅ Production Ready**: Handles enterprise-scale projects with 10,000+ files
 
-This scanner shows how Architects use IDGL to build complex tools that would be impossible to create with traditional development approaches.
+#### Meeting Follow-Up Generation
+
+Our **[MFU Generation Implementation](./02-implementation/05-mfu-generation/)** showcases domain-specific IDGL application:
+
+*   **📋 Content-Driven Approach**: Analyzes actual meeting content rather than using templates
+*   **🎯 Multiple Output Formats**: Action-oriented, knowledge-focused, hybrid, and summary formats
+*   **🔍 Quality Validation**: Ensures documentation accurately reflects meeting content
+*   **📚 Complete Methodology**: From definition to specification to boot configuration
+*   **🚀 Zero-Friction Usage**: Boot config includes default spec for immediate use
+*   **🔧 Flexible Overrides**: Support for custom and shared spec overrides
+
+These implementations show how Architects use IDGL to build complex tools that would be impossible to create with traditional development approaches.
 

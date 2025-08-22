@@ -31,6 +31,9 @@ Once you have chosen your path and are ready to move beyond the basics, the next
 
 The core of this tooling is the `idgl-boot-config.yaml`, a single configuration file that bundles the entire IDGL framework and transforms a general-purpose AI into a specialized, expert partner for your workflow.
 
-Learning to generate and use this file is the final step in moving from being a student of the IDGL to a practicing Architect who can command their AI with precision.
+For specialized domains, IDGL also supports domain-specific boot configurations that are tailored to specific use cases while maintaining the core methodology.
 
-**[→ Learn How to Use and Maintain the AI Boot Configuration](./04-ai-agent-boot-config/README.md)**
+Learning to generate and use these files is the final step in moving from being a student of the IDGL to a practicing Architect who can command their AI with precision.
+
+**[→ Learn How to Use and Maintain the AI Boot Configuration](./04-ai-agent-boot-config/instruction.md)**
+**[→ Explore Domain-Specific Configurations](./04-ai-agent-boot-config/domain-specific-configs/)**

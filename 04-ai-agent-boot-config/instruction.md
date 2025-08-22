@@ -4,6 +4,8 @@
 
 To transform a collection of source documents (a "knowledge corpus") into a single, comprehensive, machine-readable configuration file (e.g., YAML). This "bootstrapping artifact" can then be used to instantly configure a new AI agent with the distilled knowledge of the entire corpus, bypassing the need for the new agent to read all the source files.
 
+This process supports both generic configurations (for universal use) and domain-specific configurations (for specialized use cases).
+
 This is the master process for creating and updating the AI's core context.
 
 ## 2. The Process
@@ -32,6 +34,16 @@ Provide the AI with the complete, canonical set of source documents that constit
 @idgl-dev-system/03-agent-protocols/
 ```
 
+**Example (for Domain-Specific Configs):**
+```
+@idgl-dev-system/04-ai-agent-boot-config/idgl-boot-config.yaml
+@idgl-dev-system/02-implementation/05-mfu-generation/
+@idgl-dev-system/05-spec-library/business-processes/meeting-follow-up/
+@domain-specific-requirements/
+@domain-specific-patterns/
+@domain-specific-examples/
+```
+
 ### Step 3: Command the Synthesis
 
 Once the AI has confirmed it has read all the documents, issue a precise and formal prompt to command the synthesis of the bootstrapping artifact. The quality of this prompt is critical to the quality of the result.
@@ -56,3 +68,32 @@ Proceed.
 The AI will generate the YAML content in the chat.
 1.  **Validate:** Carefully review the generated YAML. Ensure it is well-structured, accurate, and complete according to your intent.
 2.  **Save:** Copy the validated YAML content and save it as the new `idgl-boot-config.yaml` file, overwriting the previous version.
+
+## 3. Domain-Specific Configuration Process
+
+For creating domain-specific boot configurations:
+
+### Step 1: Analyze Domain Requirements
+- Identify the specific domain and its unique challenges
+- Determine what patterns and protocols are needed
+- Assess what can be removed from the generic config
+
+### Step 2: Copy and Modify Generic Config
+- Start with the generic `idgl-boot-config.yaml` as a template
+- Remove irrelevant patterns and protocols
+- Add domain-specific patterns and protocols
+- Update examples and descriptions to be domain-relevant
+- Include default specifications for immediate use
+- Add spec override mechanism for customization
+
+### Step 3: Document the Reasoning
+- Create an analysis document explaining the decisions
+- Include arguments for domain-specific vs. generic approach
+- Document the implementation structure and process
+
+### Step 4: Validate Domain-Specific Config
+- Test the config with domain-specific use cases
+- Ensure it maintains IDGL core principles
+- Verify extensibility for future domain needs
+- Test default spec functionality
+- Validate spec override mechanism
