@@ -41,6 +41,9 @@ This approach ensures the Architect "owns the work." It uses the AI to enhance s
 ### 4. The Lifecycle is an Audit Trail
 The Architect replaces the chaotic, opaque nature of ad-hoc prompting with a structured, repeatable, and transparent lifecycle. Every Artifact within the system is the result of a well-defined and recorded process. This formality is the bedrock of trust and governance, creating an auditable chain of custody from intent to implementation that makes the entire system predictable by design.
 
+### 5. Verification Over Trust
+The Architect operates on a principle of zero trust. The AI's output is never assumed to be correct; it is a proposal to be rigorously validated. This tenet mandates two actions: First, the relentless refinement of the `Spec` and the generated artifact until the highest possible quality is achieved. Second, the absolute rejection of any AI-generated claim or component that cannot be traced back to and verified against the `Spec`'s intent. This transforms the Architect from a passive consumer of AI output into an active auditor, ensuring every outcome is an engineered reality, not a plausible fabrication.
+
 ---
 
 ## Anti-Patterns: The Gambler's Traps

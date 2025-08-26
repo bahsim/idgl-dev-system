@@ -16,20 +16,21 @@ This repository contains the **Intent-Driven Generative Lifecycle (IDGL)**, a li
 
 ### Get Started in 60 Seconds
 
-1.  **Choose Your Boot Configuration:**
-    *   **[Generic IDGL Config →](./04-ai-agent-boot-config/GENERIC-USER-GUIDE.md)** (for general development, code generation, system design)
-    *   **[MFU Generation Config →](./04-ai-agent-boot-config/domain-specific-configs/MFU-USER-GUIDE.md)** (for meeting documentation, content analysis, knowledge transfer)
+1.  **Download the Boot Configuration:**
+    *   **[IDGL Boot Config →](./04-ai-agent-boot-config/GENERIC-USER-GUIDE.md)** (comprehensive config with embedded specs for meeting follow-ups and project documentation)
 
 2.  **Initialize Your AI Agent:**
     *   Start a new chat session with your chosen AI.
     *   Paste the entire contents of the downloaded file as your first prompt.
 
 3.  **Become the Architect.**
-    *   The AI is now a configured IDGL partner. Start commanding it.
+    *   The AI is now a configured IDGL partner with embedded organizational capabilities. Start commanding it.
 
-**💡 Quick Decision Guide:**
-- **Use Generic Config** if you're doing general software development, system design, or learning IDGL
-- **Use MFU Config** if you're working with meeting documentation, content analysis, or knowledge transfer
+**💡 What's Included:**
+- **Meeting Follow-Up Generation**: Complete spec with dual-format output and name resolution
+- **React Project Documentation**: Comprehensive codebase analysis and documentation generation
+- **Spec-first discipline**: AI enforces proper Spec structure for all generation tasks
+- **Refinement loop support**: All specs saved to `.idgl/` folder for customization
 
 ---
 
@@ -74,15 +75,13 @@ Use these prompts to put the AI into a specific professional persona for the tas
 
 ---
 
-### Domain-Specific Boot Configurations
+### Boot Configuration
 
-IDGL supports domain-specific boot configurations that are tailored to specific use cases while maintaining the core methodology:
+IDGL provides a single, comprehensive boot configuration that embeds proven organizational capabilities:
 
-*   **📋 [MFU Generation Config](./04-ai-agent-boot-config/domain-specific-configs/mfu-generation-boot-config.yaml)**: Specialized for meeting follow-up documentation generation (includes default spec)
-*   **🔧 [Domain-Specific Analysis](./04-ai-agent-boot-config/domain-specific-configs/domain-specific-boot-config-analysis.md)**: Detailed reasoning for domain-specific approach
-*   **📚 [Generic IDGL Config](./04-ai-agent-boot-config/idgl-boot-config.yaml)**: Universal configuration for general development
+*   **📋 [IDGL Boot Config](./04-ai-agent-boot-config/idgl-boot-config.yaml)**: Monolithic configuration with embedded canonical specs for meeting follow-ups and project documentation
 
-Each domain-specific config maintains IDGL's core principles while adding specialized patterns, agent protocols, and workflows for the target domain. Domain-specific configs include default specifications for immediate use, with support for custom spec overrides.
+The boot config maintains IDGL's core principles while providing immediate productivity through embedded canonical specs. All specs (canonical and custom) are saved to the `.idgl/` workspace folder, enabling transparency and customization through the refinement loop.
 
 **🎯 Related Implementations:**
 - **[MFU Generation Implementation](./02-implementation/05-mfu-generation/)** - Complete implementation example with specs and definitions
@@ -101,14 +100,14 @@ See IDGL in action with our **[React Project Scanner](./02-implementation/04-rea
 
 #### Meeting Follow-Up Generation
 
-Our **[MFU Generation Implementation](./02-implementation/05-mfu-generation/)** showcases domain-specific IDGL application:
+Our **[MFU Generation Implementation](./02-implementation/05-mfu-generation/)** showcases IDGL application:
 
 *   **📋 Content-Driven Approach**: Analyzes actual meeting content rather than using templates
 *   **🎯 Multiple Output Formats**: Action-oriented, knowledge-focused, hybrid, and summary formats
 *   **🔍 Quality Validation**: Ensures documentation accurately reflects meeting content
 *   **📚 Complete Methodology**: From definition to specification to boot configuration
-*   **🚀 Zero-Friction Usage**: Boot config includes default spec for immediate use
-*   **🔧 Flexible Overrides**: Support for custom and shared spec overrides
+*   **🚀 Zero-Friction Usage**: Embedded canonical spec for immediate use
+*   **🔧 Refinement Loop**: All specs saved to `.idgl/` folder for customization
 
 These implementations show how Architects use IDGL to build complex tools that would be impossible to create with traditional development approaches.
 
