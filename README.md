@@ -63,6 +63,8 @@ Use these prompts to put the AI into a specific professional persona for the tas
 
 *For more advanced, multi-step scenarios, see the **[→ Specs Cookbook](./08-specs-cookbook.md)**.*
 
+[>>> video with example on youtube. Cliek HERE! <<<](https://youtu.be/PqQAHgip4j0)
+
 #### Key Plays from the Cookbook
 
 *   **To get a structured comparison of options:**
