@@ -14,6 +14,9 @@ This repository contains the **Intent-Driven Generative Lifecycle (IDGL)**, a li
 
 ---
 
+[>>> video presentation on youtube. Cliek HERE! <<<](https://www.youtube.com/watch?v=XCFNE2TVV7E)
+
+
 ### Get Started in 60 Seconds
 
 1.  **Download the Boot Configuration:**
