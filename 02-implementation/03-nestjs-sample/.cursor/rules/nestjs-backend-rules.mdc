@@ -1,0 +1,64 @@
+---
+alwaysApply: false
+---
+# NestJS Backend Rules (Pragmatic & Terse)
+
+## Architecture (Modular & Dependency-Driven)
+- **Modules are King**: All business logic MUST be encapsulated in a NestJS module (e.g., `users`, `wishes`, `auth`).
+- **Standard Structure**: Each module MUST contain `controllers`, `services`, `entities`, and `dto` subdirectories as needed.
+- **Dependency Injection First**: Never manually instantiate a service or repository. Always use NestJS's DI container via constructor injection.
+- **Single Responsibility**:
+    - `Controllers`: Handle HTTP requests, routing, and basic request validation *only*.
+    - `Services`: Contain all business logic. No database or HTTP logic should leak into controllers.
+    - `Entities`: Define the TypeORM database schema. No business logic here.
+- **Configuration**: Use the `@nestjs/config` module for all environment variables. Never hardcode configuration values.
+
+## Code & Naming Conventions
+- **File Naming**: Use kebab-case with the NestJS suffix (e.g., `user.service.ts`, `create-wish.dto.ts`).
+- **Class Naming**: Use PascalCase (e.g., `UsersService`, `CreateWishDto`).
+- **Decorators**: Always place decorators on their own line above the class, method, or property they decorate.
+- **DTOs for All I/O**: All data entering or leaving the system via a controller MUST be typed with a Data Transfer Object (DTO). Use `class-validator` decorators within DTOs for all validation.
+
+## Data & Type Safety
+- **TypeORM Entities**: All database models are defined as TypeORM entities.
+- **Strict Typing**: `noImplicitAny` is enforced. Avoid the `any` type; define an `interface` or `type` instead.
+- **Async/Await**: All asynchronous operations (e.g., database calls) MUST use `async/await`. No raw Promises (`.then()`).
+
+## API & Documentation
+- **RESTful Principles**: Adhere to standard RESTful patterns for API design (e.g., use correct HTTP verbs, status codes).
+- **Swagger/OpenAPI**: All controller endpoints MUST be decorated with `@nestjs/swagger` decorators (`@ApiOperation`, `@ApiResponse`) to ensure documentation is always up-to-date.
+
+## Testing
+- **Co-location**: Test files (`.spec.ts`) MUST be co-located with the file they are testing.
+- **Unit Tests**: All services MUST have unit tests covering their business logic. Use mocks for dependencies (e.g., repositories).
+- **E2E Tests**: Use end-to-end tests to validate the full request/response cycle for critical user flows.# NestJS Backend Rules (Pragmatic & Terse)
+
+## Architecture (Modular & Dependency-Driven)
+- **Modules are King**: All business logic MUST be encapsulated in a NestJS module (e.g., `users`, `wishes`, `auth`).
+- **Standard Structure**: Each module MUST contain `controllers`, `services`, `entities`, and `dto` subdirectories as needed.
+- **Dependency Injection First**: Never manually instantiate a service or repository. Always use NestJS's DI container via constructor injection.
+- **Single Responsibility**:
+    - `Controllers`: Handle HTTP requests, routing, and basic request validation *only*.
+    - `Services`: Contain all business logic. No database or HTTP logic should leak into controllers.
+    - `Entities`: Define the TypeORM database schema. No business logic here.
+- **Configuration**: Use the `@nestjs/config` module for all environment variables. Never hardcode configuration values.
+
+## Code & Naming Conventions
+- **File Naming**: Use kebab-case with the NestJS suffix (e.g., `user.service.ts`, `create-wish.dto.ts`).
+- **Class Naming**: Use PascalCase (e.g., `UsersService`, `CreateWishDto`).
+- **Decorators**: Always place decorators on their own line above the class, method, or property they decorate.
+- **DTOs for All I/O**: All data entering or leaving the system via a controller MUST be typed with a Data Transfer Object (DTO). Use `class-validator` decorators within DTOs for all validation.
+
+## Data & Type Safety
+- **TypeORM Entities**: All database models are defined as TypeORM entities.
+- **Strict Typing**: `noImplicitAny` is enforced. Avoid the `any` type; define an `interface` or `type` instead.
+- **Async/Await**: All asynchronous operations (e.g., database calls) MUST use `async/await`. No raw Promises (`.then()`).
+
+## API & Documentation
+- **RESTful Principles**: Adhere to standard RESTful patterns for API design (e.g., use correct HTTP verbs, status codes).
+- **Swagger/OpenAPI**: All controller endpoints MUST be decorated with `@nestjs/swagger` decorators (`@ApiOperation`, `@ApiResponse`) to ensure documentation is always up-to-date.
+
+## Testing
+- **Co-location**: Test files (`.spec.ts`) MUST be co-located with the file they are testing.
+- **Unit Tests**: All services MUST have unit tests covering their business logic. Use mocks for dependencies (e.g., repositories).
+- **E2E Tests**: Use end-to-end tests to validate the full request/response cycle for critical user flows.
